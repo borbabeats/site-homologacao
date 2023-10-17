@@ -1,5 +1,5 @@
 
-import { Fade, Container, Row, Col } from "reactstrap";
+import { Fade, Container, Col } from "reactstrap";
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from "react-i18next"
 import ImageMapper from "react-img-mapper";

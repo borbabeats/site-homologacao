@@ -1,4 +1,4 @@
-import ImgSegMapa from '../../../Config/Images/Mapa/mapa-svg-min.svg'
+import ImgSegMapa from '../../../Config/Images/Mapa/mapa2.webp';
 import { Fade, Container, Row, Col } from "reactstrap"
 import { useTranslation } from "react-i18next"
 import React from 'react';

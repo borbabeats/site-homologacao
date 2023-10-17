@@ -18538,7 +18538,7 @@ ul {
   align-items: center;
   margin: 0;
   border: 0;
-  width: 10rem !important;
+  width: 10rem;
   height: 10rem !important;
   transition: all .5s ease;
 

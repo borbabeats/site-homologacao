@@ -1,54 +1,54 @@
 import { Button, Container, Row, Col, Card, CardBody, CardTitle, CardSubtitle, CardText, Modal, ModalBody, ModalFooter } from "reactstrap";
 import { useTranslation } from "react-i18next"
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const ItemsCardNews = [
     {
         id: 1, col: '6', img: require('../../Config/Images/Fotos Maxiatualidades/selo60anos.webp'),
         titulo: 'fique-por-dentro.63anos.titulo',
-        subtitulo: 'fique-por-dentro.63anos.titulo',
+        subtitulo: 'fique-por-dentro.63anos.subtitulo',
         texto: 'fique-por-dentro.63anos.texto',
         paragraph: 'fique-por-dentro.63anos.paragraph'
     },
     {
         id: 2, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/fenatram.webp'),
         titulo: 'fique-por-dentro.tendencia.titulo',
-        subtitulo: 'fique-por-dentro.tendencia.titulo',
+        subtitulo: 'fique-por-dentro.tendencia.subtitulo',
         texto: 'fique-por-dentro.tendencia.texto',
         paragraph: 'fique-por-dentro.tendencia.paragraph'
     },
     {
         id: 3, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/ete.webp'),
         titulo: 'fique-por-dentro.ETE.titulo',
-        subtitulo: 'fique-por-dentro.ETE.titulo',
+        subtitulo: 'fique-por-dentro.ETE.subtitulo',
         texto: 'fique-por-dentro.ETE.texto',
         paragraph: 'fique-por-dentro.ETE.paragraph'
     },
     {
         id: 4, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/premioexportacao.webp'),
         titulo: 'fique-por-dentro.exportacao.titulo',
-        subtitulo: 'fique-por-dentro.exportacao.titulo',
+        subtitulo: 'fique-por-dentro.exportacao.subtitulo',
         texto: 'fique-por-dentro.exportacao.texto',
         paragraph: 'fique-por-dentro.exportacao.paragraph'
     },
     {
         id: 5, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/premiomeritor.webp'),
         titulo: 'fique-por-dentro.supplier.titulo',
-        subtitulo: 'fique-por-dentro.supplier.titulo',
+        subtitulo: 'fique-por-dentro.supplier.subtitulo',
         texto: 'fique-por-dentro.supplier.texto',
         paragraph: 'fique-por-dentro.supplier.paragraph'
     },
     {
         id: 6, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/100marcas.webp'),
         titulo: 'fique-por-dentro.100marcas.titulo',
-        subtitulo: 'fique-por-dentro.100marcas.titulo',
+        subtitulo: 'fique-por-dentro.100marcas.subtitulo',
         texto: 'fique-por-dentro.100marcas.texto',
         paragraph: 'fique-por-dentro.100marcas.paragraph'
     },
     {
         id: 7, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/mastermover.webp'),
         titulo: 'fique-por-dentro.mastermover.titulo',
-        subtitulo: 'fique-por-dentro.mastermover.titulo',
+        subtitulo: 'fique-por-dentro.mastermover.subtitulo',
         texto: 'fique-por-dentro.mastermover.texto',
         paragraph: 'fique-por-dentro.mastermover.paragraph'
     },
@@ -72,7 +72,7 @@ function StayIn() {
                 {img && <img alt={titulo} src={img} style={{ maxHeight: '15rem', width: 'auto', objectFit: 'cover', objectPosition: 'center', }} />}
                 <CardBody>
                     <CardTitle tag="h3" className='mb-2' > {t(titulo)} </CardTitle>
-                    {/* <CardSubtitle className="mb-2 text-muted " tag="h6" > {t(subtitulo)} </CardSubtitle> */}
+                    {<CardSubtitle className="mb-2 text-muted " tag="h6" > {t(subtitulo)} </CardSubtitle>}
                     <CardText className='' tag='h5'> {t(texto)} </CardText>
                     <div style={{ position: 'absolute', bottom: 20, left: 20 }}>
                         <Button className='btn-maxi-color'  onClick={toggle}> {t('geral.saiba-mais')} </Button>
@@ -82,7 +82,7 @@ function StayIn() {
             <Modal isOpen={modal} toggle={toggle} fullscreen={'xl'} size={'xl'} >
                 <div style={{ display: 'block', alignItems: 'center', alignContent: 'center', textAlign: 'center', justifyContent: 'center', marginTop: '2rem', marginBottom: '2rem', borderBottom: '1px solid #dddddd' }}>
                     <h2 className="title color-maxi mt-3 px-3">{t(titulo)}</h2>
-                    {/* <h3 className='m-3'>{t(subtitulo)}</h3> */}
+                    {<h3 className='m-3'>{t(subtitulo)}</h3>}
                 </div>
                 <ModalBody>
                     <div style={{ display: 'block', alignItems: 'center', alignContent: 'center', textAlign: 'center', justifyContent: 'center', marginBottom: '2rem',  }}>

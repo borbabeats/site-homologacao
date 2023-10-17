@@ -47,7 +47,7 @@ function ContainersItems() {
             <Card className="card-profile card-plain " >
                 <Link to={'/produtos'} onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ padding: 0, margin: 0, border: 0 }}>
                     <div className="grid-container " style={{ borderRadius: 10, backgroundColor : '#757575' }} >
-                        {src && src.map((m, index) => <div className="grid-item" key={index}>
+                        {src && src.map((m, index) => <div className="grid-item w-100" key={index}>
                             <img alt="..." src={m} className={className} />
                         </div>)}
                     </div>

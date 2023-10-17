@@ -7,19 +7,19 @@ const ItemsCardNews = [
     {
         id: 1, col: '6', img: require('../../../Config/Images/Fotos Maxiatualidades/selo60anos.webp'),
         titulo: 'fique-por-dentro.63anos.titulo',
-        subtitulo: 'fique-por-dentro.63anos.titulo',
+        subtitulo: 'fique-por-dentro.63anos.subtitulo',
         texto: 'fique-por-dentro.63anos.texto',
     },
     {
         id: 2, col: '3', img: require('../../../Config/Images/Fotos Maxiatualidades/fenatram.webp'),
         titulo: 'fique-por-dentro.tendencia.titulo',
-        subtitulo: 'fique-por-dentro.tendencia.titulo',
+        subtitulo: 'fique-por-dentro.tendencia.subtitulo',
         texto: 'fique-por-dentro.tendencia.texto',
     },
     {
         id: 3, col: '3', img: require('../../../Config/Images/Fotos Maxiatualidades/ete.webp'),
         titulo: 'fique-por-dentro.ETE.titulo',
-        subtitulo: 'fique-por-dentro.ETE.titulo',
+        subtitulo: 'fique-por-dentro.ETE.subtitulo',
         texto: 'fique-por-dentro.ETE.texto',
     },
 ]
@@ -41,7 +41,7 @@ function ContainerNews() {
                         <img alt={titulo} src={img} style={{ maxHeight: '20rem', width: 'auto', objectFit: 'cover', objectPosition: 'center', }} />
                         <CardBody>
                             <CardTitle tag="h3" className='mb-2' > {t(titulo)} </CardTitle>
-                            <CardSubtitle className="mb-2 text-muted " tag="h6" > {t(subtitulo)} </CardSubtitle>
+                            <CardSubtitle className="mb-2 text-muted text-truncate" tag="h6" > {t(subtitulo)} </CardSubtitle>
                             <CardText className='' tag='h5'> {t(texto)} </CardText>
                             <div style={{ position: 'absolute', bottom: 10, left: 10 }}>
                                 <Link to={`/fique-por-dentro#${subtitulo}`}  >

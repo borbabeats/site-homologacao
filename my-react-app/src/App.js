@@ -8,7 +8,6 @@ import Contact from "../src/Components/Contact/Contact";
 import StayIn from "../src/Components/StayIn/StayIn";
 import Acting from "../src/Components/Acting/Products";
 import Footer from "../src/Components/Footer/Footer";
-import ReactDOM from "react-dom/client";
 import "../src/Config/i18n";
 import "./index.css";
 import './App.css';

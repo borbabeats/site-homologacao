@@ -1,4 +1,4 @@
-import photo from '../../../Config/Images/Financeiro/Certificado Duns Number - Maxiforja Componentes Automotivos Ltda (1).svg'
+import photo from '../../../Config/Images/Financeiro/Certificado Duns Number - Maxiforja Componentes Automotivos Ltda.svg';
 import { Col, Container, Fade, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
@@ -17,10 +17,10 @@ function SocialPerformance({ id }) {
 						{t('sustentabilidade.atuacao-social.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
 							{titulo && <h2 className='title' >{titulo}</h2>}
 							{subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
-							{texto && texto.map((text, index) => <p className="description mt-3 text-whit" key={index}> {text} </p>)}
+							{texto && texto.map((text, index) => <p className="description mt-3 text-black" key={index}> {text} </p>)}
 						</div>)}
 						<Row className=" text-center items-align d-flex justify-content-center align-items-center mt-3" >
-							{/* <img src={photo} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 10 }} /> */}
+							{<img src={photo} alt="spm" style={{ width: '50%', height: 'auto', borderRadius: 10 }} />}
 						</Row>
 					</Col>
 				</Fade>
