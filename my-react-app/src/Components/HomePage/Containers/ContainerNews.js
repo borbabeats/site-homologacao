@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const ItemsCardNews = [
     {
-        id: 1, col: '6', img: require('../../../Config/Images/Fotos Maxiatualidades/selo60anos.webp'),
+        id: 1, col: '6' , col2: '3', img: require('../../../Config/Images/Fotos Maxiatualidades/selo60anos.webp'),
         titulo: 'fique-por-dentro.63anos.titulo',
         subtitulo: 'fique-por-dentro.63anos.subtitulo',
         texto: 'fique-por-dentro.63anos.texto',
@@ -25,6 +25,8 @@ const ItemsCardNews = [
 ]
 
 
+
+
 function ContainerNews() {
     const { t } = useTranslation()
 
@@ -36,7 +38,7 @@ function ContainerNews() {
         <Container>
             <h2 className="title mb-5">{'Fique por Dentro'}</h2>
             <Row>
-                {ItemsCardNews && ItemsCardNews.map(({ id, col, img, titulo, subtitulo, texto }) => <Col className="ml-auto mr-auto" md={col} lg={col} sm={col} key={id}>
+                {ItemsCardNews && ItemsCardNews.map(({ id, col, img, titulo, subtitulo, texto }) => <Col className="ml-auto mr-auto" md='4' lg={col} sm={col} key={id}>
                     <Card body color="light" className='' style={{ padding: 0, height: '45rem', border: 0 }}>
                         <img alt={titulo} src={img} style={{ maxHeight: '20rem', width: 'auto', objectFit: 'cover', objectPosition: 'center', }} />
                         <CardBody>

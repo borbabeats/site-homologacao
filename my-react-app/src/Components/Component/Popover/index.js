@@ -41,7 +41,8 @@ function Popover({ }) {
                             <div key={index} id={item} onClick={onClickLanguage} style={{
                                 flex: 1, border: 0, padding: 4, height: '100%',
                                 width: '100%', textAlign: 'center', alignItems: 'center', transition: 'background-color 0.8s ease',
-                                backgroundColor: languageSelect === item ? '#001f3d' : '#d0d0d0'
+                                backgroundColor: languageSelect === item ? '#001f3d' : '#d0d0d0',
+                                color: languageSelect === item ? '#fff' : '#403d39'
                             }}> {item} </div>))}
                     </div>
                 </div>

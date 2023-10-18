@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Container, Row, Col, Fade } from "reactstrap";
+import { Container, Col} from "reactstrap";
 import { useTranslation } from "react-i18next"
 import ImageMapper from "react-img-mapper";
 import { useMediaQuery } from 'react-responsive';
