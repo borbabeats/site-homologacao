@@ -91,7 +91,7 @@ export default function Lines() {
     const handleYearClick = (event) => setActiveYear(event)
 
     const Navbar = ({ items }) => {
-        return <nav style={{ zIndex: 90 }}>
+        return <nav style={{ zIndex: 90, margin: 0 }}>
             <ul className="navbar d-sm-inline-flex d-flex" style={{ zIndex: 91, backgroundColor: 'transparent' }}>
                 {items && items.map(({ id, year, index }) => {
                     return <li className={`${year} nav-item  ${activeYear === id && 'active'}`} onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`}>
