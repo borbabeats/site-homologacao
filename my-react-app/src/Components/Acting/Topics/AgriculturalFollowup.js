@@ -163,7 +163,7 @@ export default function AgriculturalFollowup({ id, ImgSegAgri }) {
         if (!event) return
         const { clientX, clientY } = event;
         const { left, top } = event.currentTarget.getBoundingClientRect();
-        const adjustedX = (area['coords'][0] > 804) ? clientX - left - 100 : clientX - left;
+        const adjustedX = (area['coords'][0] > 804) ? clientX - left - 200 : clientX - left;
         const adjustedY = clientY - top
         setDivPosition({ left: adjustedX, top: adjustedY })
         SetInfoPiece(area);

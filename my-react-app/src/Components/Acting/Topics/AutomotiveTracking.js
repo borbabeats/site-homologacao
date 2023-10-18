@@ -315,7 +315,7 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
         if (!event) return
         const { clientX, clientY } = event;
         const { left, top } = event.currentTarget.getBoundingClientRect();
-        const adjustedX = (area['coords'][0] > 804) ? clientX - left - 160 : clientX - left;
+        const adjustedX = (area['coords'][0] > 804) ? clientX - left - 200 : clientX - left;
         const adjustedY = clientY - top;
         setDivPosition({ left: adjustedX, top: adjustedY })
         SetInfoPiece(area);

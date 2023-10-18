@@ -3,27 +3,27 @@
         "nav-bar": {
             "menus": [
                 {
-                    "menu": "Institucional",
+                    "menu": "Institutional",
                     "href": "/institucional"
                 },
                 {
-                    "menu": "Produtos",
+                    "menu": "Products",
                     "href": "/produtos"
                 },
                 {
-                    "menu": "Tecnologia",
+                    "menu": "Technology",
                     "href": "/tecnologia"
                 },
                 {
-                    "menu": "Sustentabilidade",
+                    "menu": "Sustainability",
                     "href": "/sustentabilidade"
                 },
                 {
-                    "menu": "Fique por Dentro",
+                    "menu": "News",
                     "href": "/fique-por-dentro"
                 },
                 {
-                    "menu": "Contato",
+                    "menu": "Contact",
                     "href": "/contato"
                 }
             ]
@@ -32,10 +32,10 @@
             "topicos1": "Buscando na tecnologia e na excelência",
             "subtopicos1": "Os melhores resultados.",
             "topicos2": "Referência no mercado da indústria",
-            "subtopicos2": "Nacional e Internacional",
+            "subtopicos2": "National and International",
             "topicos3": "Excelência e sustentabilidade são chaves para o sucesso",
             "subtopicos3": "Além de trazer ao cliente a solução mais adequada, rápida e eficiente",
-            "historia": "Nossa História",
+            "historia": "Our History",
             "texto-historia": "Fundada em 1963, na cidade de Canoas/RS, a empresa iniciou sua operação com a produção de eletroferragem galvanizada para redes de energia elétrica. Em 1966, entrou no mercado de peças forjadas, produzindo acessórios para isoladores de vidro. As produções para atender os mercados de implementos agrícolas e rodoviários iniciaram em 1971. Em 1973, passou a se denominar Maxiforja, quando também ocorreu a transferência para a sede atual, hoje ocupando 32 mil metros quadrados de área construída. A década de 80 foi marcada pelo início de operações com prensas rápidas, iniciando a produção de peças usinadas para os mercados automotivo e agrícola. Na década de 90, a empresa passou a produzir braços para direção de caminhões e ônibus, para o mercado nacional e internacional. Atualmente, a empresa tem como sua principal atividade o desenvolvimento e a fabricação de componentes e sistemas forjados e usinados para os mercados agrícola, automotivo e industrial. Nossa história, ao longo de seis décadas, focada na inovação e na excelência da entrega, é feita por pessoas, que se reinventam e se transformam no presente, sempre atentos ao futuro.",
             "marco1": "Início das atividades, produção de eletroferragens galvanizadas para o segmento de energia",
             "marco2": "Iniciada a produção de peças para o segmento Agrícola",
@@ -44,8 +44,8 @@
             "marco5": "Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro.",
             "marco6": "Início da produção em célula na Usinagem",
             "produto": {
-                "produto": "Produtos",
-                "automotivo": "Automotivo",
+                "produto": "Products",
+                "automotivo": "Automotive",
                 "agricola": "Agrícola",
                 "MEC": "Máquinas e Equipamentos de Construção"
             }
@@ -710,28 +710,28 @@
             
         },
         "contato": {
-            "endereco": "Endereço",
-            "fale-conosco": "Fale Conosco",
-            "telefone": "Telefone",
-            "canal-denuncia": "Canal de Denúncia",
-            "clique": "Clique Aqui!",
+            "endereco": "Address",
+            "fale-conosco": "Contact Us",
+            "telefone": "Phone number",
+            "canal-denuncia": "Denunciation Channel",
+            "clique": "Click Here!",
             "map": "http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Av.+Antonio+Frederico+Ozanan,+1181&amp;sll=-14.239424,-53.186502&amp;sspn=50.603317,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Ant%C3%B4nio+Frederico+Ozanan,+1181+-+Bairro+do+Parque,+Canoas+-+Rio+Grande+do+Sul,+92420-360&amp;ll=-29.8779744,-51.1695529,15&amp;spn=0.011164,0.031285&amp;z=15&amp;iwloc=A&amp;output=embed"
         },
         "rodape": {
             "aviso": "Aviso Legal",
-            "lang": "pt",
+            "lang": "en",
             "cookies": {
                 "href": "https://www.iubenda.com/privacy-policy/70338458/cookie-policy",
-                "titulo": "Política de Cookies"
+                "titulo": "Cookie Policy"
             },
             "privacidade": {
                 "href": "https://www.iubenda.com/privacy-policy/70338458",
-                "titulo": "Política de Privacidade"
+                "titulo": "Privacy Policy"
             }
         },
         "geral": {
-            "saiba-mais": "Saiba Mais",
-            "fechar": "Fechar"
+            "saiba-mais": "More Info",
+            "fechar": "Close"
         }
     }
 }

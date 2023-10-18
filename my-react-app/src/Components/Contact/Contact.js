@@ -24,7 +24,7 @@ function Contact() {
 						<p> maxiforja@maxiforja.com.br </p>
 						<p> comercial.atendimento@maxiforja.com.br</p>
 						<h2 className="title mt-5">{t('contato.canal-denuncia')}</h2>
-						<p> {t('contato.canal-denuncia')} <a className="text-dark" href="https://www.contatoseguro.com.br/maxiforja" target="_blank" rel="noreferrer"> ({t('contato.clique')}) </a></p>
+						<p> {t('contato.canal-denuncia')} <a className="text-danger" href="https://www.contatoseguro.com.br/maxiforja" target="_blank" rel="noreferrer" style={{fontWeight: "bold"}}> ({t('contato.clique')}) </a></p>
 					</Col>
 				</Row>
 			</Fade>

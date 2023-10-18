@@ -91,7 +91,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
         if (!event) return
         const { clientX, clientY } = event;
         const { left, top } = event.currentTarget.getBoundingClientRect();
-        const adjustedX = (area['coords'][0] > 804) ? clientX - left - 50 : clientX - left;
+        const adjustedX = (area['coords'][0] > 183) ? clientX - left - 150 : clientX - left;
         const adjustedY = clientY - top
         setDivPosition({ left: adjustedX, top: adjustedY })
         SetInfoPiece(area);
