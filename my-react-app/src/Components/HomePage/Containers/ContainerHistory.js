@@ -47,7 +47,7 @@ function PageHome() {
             classNameIcon: '',
             textForTitle: '2008',
             textForApresentation: 'home.marco5',
-            img: null/*img2008*/, sort : 'definir imagem'
+            img: null/*img2008*/
 
         }, {
             id: 6,

@@ -50,7 +50,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [613, 397, 30],
-                img: [require('../../../Config/Images/ImagesConstruction/Lift Cylinder Yoke + Yoke Cap.png')]
+                img: [require('../../../Config/Images/ImagesConstruction/lift-cylinder-yoke-yoke-cap.webp')]
             },
             {
                 name: "6 - Garfo do Yoke e Capa do Yoke",
@@ -58,7 +58,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [759, 337, 28],
-                img: [require('../../../Config/Images/ImagesConstruction/Lift Cylinder Yoke + Yoke Cap.png')]
+                img: [require('../../../Config/Images/ImagesConstruction/lift-cylinder-yoke-yoke-cap.webp')]
             },
             {
                 name: "7 - Capa01",
@@ -66,7 +66,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [779, 469, 13],
-                img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
+                img: [require('../../../Config/Images/ImagesConstruction/cap-1.webp')]
             },
             {
                 name: "8 - Capa01",
@@ -74,7 +74,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [628, 532, 14],
-                img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
+                img: [require('../../../Config/Images/ImagesConstruction/cap-1.webp')]
             },
         ],
     }

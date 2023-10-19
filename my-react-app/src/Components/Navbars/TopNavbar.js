@@ -58,7 +58,7 @@ export default function TopNavbar() {
                         {t('nav-bar.menus', { returnObjects: true }).map(({ menu, href }, index) => {
                             return <NavItem key={index}>
                                 <NavLink to={href} tag={Link} onClick={ClickInNavLinkOrNavbarBrand} 
-                                className="color-secondary p-lg-1">
+                                className="color-dark p-lg-1">
                                     {menu}
                                 </NavLink>
                             </NavItem>
