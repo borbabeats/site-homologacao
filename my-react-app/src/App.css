@@ -13881,7 +13881,7 @@ select::-moz-focus-inner {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #66615b;
+  color: var(--gray-dark)/*#66615b*/;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.6;

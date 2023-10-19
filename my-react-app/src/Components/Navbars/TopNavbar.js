@@ -45,7 +45,7 @@ export default function TopNavbar() {
             <Container>
                 <div className="navbar-translate">
                     <NavbarBrand to="/" title="Maxiforja" onClick={ClickInNavLinkOrNavbarBrand} tag={Link} className="px-0">
-                        <img src={iconMaxi} alt="Logo Maxiforja" style={{ width:"250px", padding: 0 }} />
+                        <img src={iconMaxi} alt="Logo Maxiforja" style={{ width:"250px", height:"66px", padding: 0 }} />
                     </NavbarBrand>
                     <button aria-expanded={navbarCollapse} className={classnames("navbar-toggler navbar-toggler", { toggled: navbarCollapse })} onClick={toggleNavbarCollapse} >
                         <span className="navbar-toggler-bar bar1" />

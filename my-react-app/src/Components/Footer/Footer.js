@@ -21,9 +21,9 @@ function Footer() {
 			const footer = document.getElementById("footer");
 			const buttom = document.getElementById("button");
 			if (footer.getBoundingClientRect().top < buttom.getBoundingClientRect().bottom) {
-				SetClassNameButtom('color-secondary')
+				SetClassNameButtom('color-secondary border-0')
 			} else {
-				SetClassNameButtom('color-primary')
+				SetClassNameButtom('color-primary border-0')
 			}
 		};
 		window.addEventListener("scroll", handleScroll);
@@ -45,7 +45,7 @@ function Footer() {
 	}
 
 	return <>
-		<a id="button" href='' className={classNameButtom} onClick={ClickInNavLinkOrNavbarBrand}></a>
+		<button id="button" href='' className={classNameButtom} onClick={ClickInNavLinkOrNavbarBrand}></button>
 		<footer className={"main-footer"} id="footer">
 			<Container>
 				<div className="footer-content px-0">
@@ -57,18 +57,19 @@ function Footer() {
 								</figure>
 							</Link>
 							<div className="text mt-1">
-								<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+								<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noreferrer">
 									<BsInstagram className={isDesktop ? "icons-social-media" : "icons-social-media-mobile"} />
 								</a>
-								<a href="https://www.linkedin.com/company/maxiforja/" target="_blank">
+								<a href="https://www.linkedin.com/company/maxiforja/" target="_blank" rel="noreferrer">
 									<BsLinkedin className={isDesktop ? "icons-social-media" : "icons-social-media-mobile"} />
 								</a>
 							</div>
 
 						</Col>
 						<Col sm={12} md={12} lg={4} className='pt-3 pb-0'>
-							<div className="footer-title ">{'\u200B'}</div>
-							{/* <div className="footer-title ">{'Politicas '}</div> */}
+							<div className="footer-title ">{'Políticas '}</div>
+							{/*<div className="footer-title ">{'\u200B'}</div>*/}
+							
 							<ul className="list p-0 mt-3">
 								<li className="pb-2 ">
 									<a href={t('rodape.cookies.href')} className="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe text-white color-secondary"
