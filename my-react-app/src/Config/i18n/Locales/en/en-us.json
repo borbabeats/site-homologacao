@@ -350,45 +350,45 @@
                 "titulo": "Machining 2",
                 "texto": [
                     {
-                        "titulo": "Usinagem 2",
+                        "titulo": "Machining 2",
                         "subtitulo": "",
                         "texto": [
-                            "Célula de Solda Robotizada;",
-                            "Linha de pré-tratamento com 8 estágios;",
-                            "Pintura Líquida de Primer e Acabamento;",
-                            "Montagem de conjuntos."
+                            "Robotic Welding Cell;",
+                            "8-stage pre-treatment line;",
+                            "Liquid Primer and Finish Paint;",
+                            "Assembling sets."
                         ],
                         "itens": []
                     }
                 ]
             },
             "expedicao": {
-                "menu": "Expedição",
-                "titulo": "Expedição",
+                "menu": "Shipping",
+                "titulo": "Shipping",
                 "texto": [
                     {
-                        "titulo": "Expedição",
+                        "titulo": "Shipping",
                         "subtitulo": "",
                         "texto": [
-                            "Estrutura com layout inteligente;",
-                            "Modernas posições com fluxo de movimentação;",
-                            "Facilidade na operação e no fluxo logístico."
+                            "Structure with intelligent layout;",
+                            "Modern positions with movement flow;",
+                            "Ease of operation and logistics flow."
                         ],
                         "itens": []
                     }
                 ]
             },
             "ferramentaria": {
-                "menu": "Ferramentaria",
-                "titulo": "Ferramentaria",
+                "menu": "Toolmaking",
+                "titulo": "Toolmaking",
                 "texto": [
                     {
-                        "titulo": "Ferramentaria",
+                        "titulo": "Toolmaking",
                         "subtitulo": "",
                         "texto": [
-                            "Inspeção Digital;",
-                            "High Speed Machines e máquinas de usinagem de 5 eixos;",
-                            "Desenvolvimento Compacto e Integrado",
+                            "Digital Inspection;",
+                            "High Speed Machines and 5-axis machining centers;",
+                            "Compact and integrated development",
                             "Qform",
                             "Siemens NX (CAD/CAM)",
                             "Siemens Teamcenter (PLM)",
@@ -400,51 +400,51 @@
                 ]
             },
             "laboratorio-mecanico": {
-                "menu": "Laboratório de Testes e Ensaios Mecânicos",
-                "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                "menu": "Mechanical Testing Laboratory",
+                "titulo": "Mechanical Testing Laboratory",
                 "texto": [
                     {
-                        "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                        "titulo": "Mechanical Testing Laboratory",
                         "subtitulo": "",
                         "texto": [
-                            "Validação de produtos;",
-                            "Ensaios de tração e compressão; impacto, fadiga linear, flexão rotativa e torcional, drop test e impactoCharpy e Izod;",
-                            "Requisitos de acordo com a ABNT NBR ISO/IEC 17025."
+                            "Product validation;",
+                            "Tensile and compression tests; impact, linear fatigue, rotary and torsional bending, drop test e impactoCharpy and Izod;",
+                            "Requirements according to ABNT NBR ISO/IEC 17025."
                         ],
                         "itens": []
                     }
                 ]
             },
             "laboratorio-metalurgico": {
-                "menu": "Laboratório Metalúrgico",
-                "titulo": "Laboratório Metalúrgico",
+                "menu": "Metallurgical Laboratory",
+                "titulo": "Metallurgical Laboratory",
                 "texto": [
                     {
-                        "titulo": "Laboratório Metalúrgico",
+                        "titulo": "Metallurgical Laboratory",
                         "subtitulo": "",
                         "texto": [
-                            "Equipado com moderna linha de durômetros e microscópios;",
-                            "Ensaios de dureza e Microdureza; ",
-                            "Análises Metalográficas e  Espectrometria – Óptica."
+                            "Equipped with a modern range of durometers and microscopes;",
+                            "Hardness and microhardness tests; ",
+                            "Metallographic Analysis and Optical Spectrometry."
                         ],
                         "itens": []
                     }
                 ]
             },
             "metrologia": {
-                "menu": "Metrologia",
-                "titulo": "Metrologia",
+                "menu": "Metrology",
+                "titulo": "Metrology",
                 "texto": [
                     {
-                        "titulo": "Metrologia",
-                        "subtitulo": "“Se você não pode medir algo, não pode melhorá-lo.” (Lord Kelvin)",
+                        "titulo": "Metrology",
+                        "subtitulo": "“If you can't measure something, you can't to make it better.” (Lord Kelvin)",
                         "texto": [
-                            "Com isto a Maxiforja entende que medir é sinônimo de conhecer e, por meio de medições integradas com base de dados para avaliação dimensional de todos os itens fabricados,  formar uma cultura de constante inovação e aprendizado.",
-                            "Nosso laboratório de Metrologia está preparado e equipado com tecnologias de última geração para fornecimento de produtos conforme a necessidade que nossos clientes necessitam."
+                            "With this in mind, Maxiforja understands that measuring is synonymous with knowing and, by means of integrated measurements with a database for dimensional evaluation of all manufactured items, forms a culture of constant innovation and learning.",
+                            "Our Metrology laboratory is prepared and equipped with state-of-the-art technology to supply products according to our customers' needs."
                         ],
                         "itens": [
                             {
-                                "titulo": "Tridimensionais:",
+                                "titulo": "Three-dimensional:",
                                 "textos": [
                                     "Zeiss Prismo Navigator",
                                     "Zeiss Contura G2",
@@ -452,18 +452,18 @@
                                 ]
                             },
                             {
-                                "titulo": "Rugosímetros:",
+                                "titulo": "Roughness measurement:",
                                 "textos": [
                                     "Taylor Robson"
                                 ]
                             },
                             {
-                                "titulo": "Equipamentos de Perfil:",
+                                "titulo": "Profile equipment:",
                                 "textos": [
                                     "Jenoptik Hommel",
-                                    "Perfilometro Mahr",
+                                    "Profilometer Mahr",
                                     "Scanner Zeiss Comet 3D",
-                                    "Braço de Medição Homer"
+                                    "Measurement Arm Homer"
                                 ]
                             }
                         ]
@@ -471,22 +471,22 @@
                 ]
             },
             "laboratorio-quimico": {
-                "menu": "Laboratório Químico",
-                "titulo": "Laboratório Químico",
+                "menu": "Chemical Laboratory",
+                "titulo": "Chemical Laboratory",
                 "texto": [
                     {
-                        "titulo": "Laboratório Químico",
+                        "titulo": "Chemical Laboratory",
                         "subtitulo": "",
                         "texto": [
-                            "O Laboratório Químico foi inaugurado em uma nova área, em fevereiro de 2020, ao lado da linha de Pintura Líquida, devido à importância deste setor nos controles de processo e na garantia dos padrões de qualidade do pré-tratamento (à base de fosfato de zinco tricatiônico), e da pintura líquida da Maxiforja.",
-                            "As principais competências do Laboratório Químico são:",
-                            "- Realizar análises de cloro, ferro, dureza, pH e condutividade durante a produção de água DI pelo processo de Osmose Reversa;",
-                            "- Executar análises de alcalinidade, alcalinidade total, pH, condutividade, acidez total, acidez livre, sólidos sedimentáveis, massa de fosfato depositada, teor de zinco em amostras do pré-tratamento;",
-                            "- Realizar termografias das estufas de cura e de secagem de peças;",
-                            "- Efetuar ensaios de aderência, espessura, dureza e brilho em componentes pintados;",
-                            "- Medir a viscosidade de tintas - método copo Ford nº4;",
-                            "- Emitir relatórios de pintura;",
-                            "- Medir luminosidade das cabines de pintura e pontos de inspeção de peças na linha de pintura; "
+                            "The Chemical Laboratory was inaugurated in a new area in February 2020, next to the Liquid Paint line, due to the importance of this sector in process controls and in guaranteeing the quality standards of Maxiforja's pre-treatment (based on tricalcium zinc phosphate) and liquid paint.",
+                            "The main competencies of the Chemical Laboratory are:",
+                            "- Analyze chlorine, iron, hardness, pH and conductivity during the production of DI water by the Reverse Osmosis process;",
+                            "- Carry out analyses of alkalinity, total alkalinity, pH, conductivity, total acidity, free acidity, settleable solids, mass of phosphate deposited, zinc content in pre-treatment samples;",
+                            "- Thermography of the curing and drying ovens for parts;",
+                            "- Carry out adhesion, thickness, hardness and gloss tests on painted components;",
+                            "- Measuring the viscosity of paints - Ford cup method no. 4;",
+                            "- Issue painting reports;",
+                            "- Measuring the brightness of paint booths and parts inspection points on the paint line; "
                         ]
                     }
                 ]
@@ -495,155 +495,155 @@
         "fique-por-dentro": {
             "63anos": {
                 "titulo": "2023: The Maxiforja's 60th is coming up",
-                "subtitulo": "EMPRESA RELEMBRA SUA HISTÓRIA E JÁ PREPARA AÇÕES COMEMORATIVAS À DATA.",
-                "texto": "A Maxiforja já iniciou a contagem regressiva rumo às comemorações dos seus 60 anos de história, em julho de 2023. Os preparativos para a data reúnem uma série de ações, que incluem o resgate da história da empresa, homenagens e agradecimentos a colaboradores, parceiros e clientes.",
+                "subtitulo": "THE COMPANY LOOKS BACK ON ITS HISTORY AND IS ALREADY PREPARING EVENTS TO COMMEMORATE THE DATE.",
+                "texto": "Maxiforja has already started the countdown to its 60th anniversary celebrations in July 2023. Preparations for the date include a series of actions, including a review of the company's history, tributes and thanks to employees, partners and customers.",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": "A Maxiforja já iniciou a contagem regressiva rumo às comemorações dos seus 60 anos de história, em julho de 2023. Os preparativos para a data reúnem uma série de ações, que incluem o resgate da história da empresa, homenagens e agradecimentos a colaboradores, parceiros e clientes."
+                        "texto": "Maxiforja has already started the countdown to its 60th anniversary celebrations in July 2023. Preparations for the date include a series of actions, including a review of the company's history, tributes and thanks to employees, partners and customers."
                     },
                     {
                         "titulo": "",
-                        "texto": "O nome Maxiforja Forjaria e Metalurgia veio dez anos depois, em 1973, quando aconteceu a transferência para a sede atual, também em Canoas/RS. A partir da aquisição do primeiro Martelo de Forjamento de 25 kJ, inaugurou-se a Forjaria I – ampliada dois anos mais tarde. A década de 1980, com a chegada da Prensa Smeral de 1.000 tonf, foi marcada pelo início de operações com prensas rápidas. Para acompanhar a evolução do maquinário, inaugurou-se a Forjaria II, com prensas Smeral de até 4.000 tonf., a maior do RS. Neste período, a Maxiforja iniciou a produção de peças usinadas para os mercados automotivo e agrícola, atividade que colocaria a empresa como referência para o mercado nacional."
+                        "texto": "The name Maxiforja Forjaria e Metalurgia came ten years later, in 1973, when the company moved to its current headquarters, also in Canoas/RS. With the acquisition of the first 25 kJ forging hammer, Forgery I was inaugurated - expanded two years later. The 1980s, with the arrival of the 1,000 tonf Smeral Press, saw the start of operations with rapid presses. To keep up with the evolution of the machinery, Forgery II was inaugurated, with Smeral presses of up to 4,000 tons, the largest in RS. During this period, Maxiforja began producing machined parts for the automotive and agricultural markets, an activity that would set the company apart in the national market."
                     },
                     {
                         "titulo": "",
-                        "texto": "E por esse caminho, sempre atenta às inovações, a história da Maxiforja se desenvolveu. A partir da década de 90, se voltou ainda mais para os mercados automotivo e agrícola, sendo que, em 2008, alterou seu nome para Maxiforja Componentes Automotivos, tendo sua principal atividade o desenvolvimento e a fabricação de componentes e sistemas forjados e usinados para os mercados agrícola, automotivo e de linha amarela."
+                        "texto": "Maxiforja's history has developed along these lines, always on the lookout for innovations. From the 1990s onwards, it focused even more on the automotive and agricultural markets, and in 2008 it changed its name to Maxiforja Componentes Automotivos, whose main activity is the development and manufacture of forged and machined components and systems for the agricultural, automotive and yellow line markets."
                     },
                     {
                         "titulo": "",
-                        "texto": "Os investimentos em Pesquisa & Desenvolvimento, as conquistas de ISOs, os investimentos em subestações de energia, o aprimoramento de processos, a gestão de colaboradores, a qualidade das entregas e o bom atendimento ao cliente são marcas constantes nesta trajetória. “Com uma gestão comprometida com a ética e a transparência, a Maxiforja adota as melhores práticas de governança corporativa e de compliance na condução do negócio. Entendemos que nosso diferencial, para que os investimentos tragam o retorno esperado, está baseado na nossa estratégia de planejamento e constante pesquisa em tecnologias de manufatura de última geração”, afirma Gustavo Veit, gerente geral da Maxiforja."
+                        "texto": "Investments in Research & Development, ISO achievements, investments in energy substations, process improvement, employee management, quality deliveries and good customer service are constant hallmarks of this trajectory. 'With a management committed to ethics and transparency, Maxiforja adopts the best corporate governance and compliance practices when running its business. We understand that our differential, so that investments bring the expected return, is based on our planning strategy and constant research into state-of-the-art manufacturing technologies,' says Gustavo Veit, Maxiforja's general manager."
                     }
                 ]
             },
             "tendencia": {
-                "titulo": "Tendências e inovações sempre no radar da Maxiforja",
-                "subtitulo": "EMPRESA PARTICIPA DE EVENTOS NACIONAIS E INTERNACIONAIS PARA ACOMPANHAR DE PERTO OS MOVIMENTOS DO MERCADO",
-                "texto": "Uma das principais características da Maxiforja, em quase seis décadas de história, é acompanhar de perto as movimentações do mercado nacional e internacional, em especial as tendências e inovações dos setores automotivos e do agronegócio...",
+                "titulo": "Trends and innovations always on Maxiforja's radar",
+                "subtitulo": "THE COMPANY PARTICIPATES IN NATIONAL AND INTERNATIONAL EVENTS TO KEEP A CLOSE EYE ON MARKET MOVEMENTS",
+                "texto": "One of Maxiforja's main characteristics in its almost six decades of history is to keep a close eye on national and international market movements, especially trends and innovations in the automotive and agribusiness sectors...",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": "Uma das principais características da Maxiforja, em quase seis décadas de história, é acompanhar de perto as movimentações do mercado nacional e internacional, em especial as tendências e inovações dos setores automotivos e do agronegócio. Para isso, além da análise permanente do comportamento dos players, dos cenários econômicos e políticos mundiais, a empresa participa de importantes eventos setoriais, com o objetivo de conhecer de perto as demandas tecnológicas destes mercados."
+                        "texto": "One of Maxiforja's main characteristics in its almost six decades of history is to keep a close eye on national and international market movements, especially trends and innovations in the automotive and agribusiness sectors. To this end, in addition to constantly analyzing the behavior of the players and the global economic and political scenarios, the company takes part in important industry events, with the aim of getting to know the technological demands of these markets up close."
                     },
                     {
                         "titulo": "",
-                        "texto": "Em setembro, a Maxiforja visitou a IAA Transportation 2022, em Hannover, na Alemanha, uma das maiores feiras mundiais de caminhões pesados. Conforme Roberto Koeche, gerente comercial da Maxiforja e que esteve presente no evento, a feira trouxe inovações e tendências deste mercado, com foco especial na eletrificação dos veículos. “Conforme estabelecido pelos países membros da CEE (Comunidade Econômica Europeia), as montadoras estão focadas em zerar a emissão de carbono até 2030. Precisamos entender como essa adaptação ou migração tecnológica influenciará nos nossos produtos”, explica Koeche. Antes disso, “estamos atentos ao Euro 6, que entrará em vigor em janeiro de 2023 e define nova regra para emissões de poluentes para caminhões e ônibus com peso bruto total a partir de 3,5 toneladas no Brasil”, completa."
+                        "texto": "In September, Maxiforja visited IAA Transportation 2022 in Hannover, Germany, one of the world's largest trade fairs for heavy trucks. According to Roberto Koeche, Maxiforja's commercial manager, who attended the event, the fair brought innovations and trends to this market, with a special focus on the electrification of vehicles. 'As established by the member countries of the EEC (European Economic Community), automakers are focused on net-zero carbon emissions by 2030. We need to understand how this adaptation or technological migration will influence our products,' explains Koeche. Before that, 'we're paying attention to Euro 6, which will come into force in January 2023 and defines a new rule for pollutant emissions for trucks and buses with a total gross weight of 3.5 tons or more in Brazil,' he adds."
                     },
                     {
                         "titulo": "",
-                        "texto": "Também no Brasil, a equipe Maxiforja participou no mês de novembro da Fenatran 2022, em São Paulo, para entender o comportamento do mercado nacional. “Estivemos visitando nossos clientes e conhecendo de perto as previsões de inovação e desenvolvimento tecnológico para o mercado nacional. A Fenatran é a IAA brasileira”, salienta Koeche."
+                        "texto": "Also in Brazil, the Maxiforja team took part in Fenatran 2022 in São Paulo in November to understand the behavior of the domestic market. 'We visited our customers and got to know the forecasts for innovation and technological development for the national market. Fenatran is the Brazilian IAA,' said Koeche."
                     },
                     {
                         "titulo": "",
-                        "texto": "Em relação a volumes, para o próximo ano, a expectativa é de estabilidade no mercado local, com retomada do crescimento a partir de 2024."
+                        "texto": "In terms of volumes, the expectation for next year is stability in the local market, with growth resuming from 2024 onwards."
                     }
                 ]
             },
             "ETE": {
-                "titulo": "Estação de Tratamento de Efluentes (ETE)",
-                "subtitulo": "COMPROMISSO COM O MEIO AMBIENTE",
-                "texto": "Seguindo os mais altos padrões e com certificação internacional, cuidamos e protegemos o meio ambiente através de uma estação interna de tratamento de efluentes.",
+                "titulo": "Effluent Treatment Plant (ETP)",
+                "subtitulo": "COMMITMENT TO THE ENVIRONMENT",
+                "texto": "Following the highest standards and with international certification, we care for and protect the environment through an in-house effluent treatment plant.",
                 "paragraph": [
                     {
-                        "titulo": "Seguindo os mais altos padrões e com certificação internacional, cuidamos e protegemos o meio ambiente através de uma estação interna de tratamento de efluentes.",
-                        "texto": " A água está presente em quase todos os processos de produção industrial e também nas rotinas de nosso dia a dia. Ela é essencial em várias etapas, desde a limpeza interna dos ambientes e dos maquinários, para nosso uso em áreas comuns como refeitório e banheiros, está presente no resfriamento das máquinas e até mesmo na produção de nossas peças."
+                        "titulo": "Following the highest standards and with international certification, we care for and protect the environment through an in-house effluent treatment plant.",
+                        "texto": "Water is present in almost all industrial production processes and also in our daily routines. It is essential at various stages, from internal cleaning of rooms and machinery, to our use in common areas such as restaurant and toilets, it is present in the cooling of machinery and even in the production of our parts."
                     },
                     {
                         "titulo": "",
-                        "texto": "De acordo com dados oficiais do governo Federal, as indústrias são responsáveis por 22% do consumo de água no país. Por fazer parte desta parcela tão importante, a Maxiforja se preocupa e busca contribuir com o meio ambiente através do tratamento dos efluentes produzidos na empresa. Internamente, criamos estações para tratar de forma primária e secundária os efluentes industriais e biológicos. Toda a água utilizada em nossa indústria passa pelo processo, que segue as mais rigorosas diretrizes. O tratamento de efluentes considera duas fases: na primeira, existe uma etapa físico-química onde através de uma reação química, a parte sólida e a parte líquida do efluente se destacam para que depois sejam removidas em um processo de separação. Já na segunda fase, que é a fase biológica, uma série de microrganismos e bactérias se encarregam de consumir a matéria orgânica poluente através de um processo respiratório. Com mais de 800 colaboradores e uma produção contínua de produtos, nossa própria ETE (Estação de Tratamento de Efluentes) foi inaugurada em 2016 e é um grande diferencial de mercado. Essa e outras ações nos trouxeram a certificação ISO 14.001, que especifica os requisitos de um Sistema de Gestão Ambiental e comprova nosso compromisso em proteger o meio ambiente."
+                        "texto": "According to official data from the federal government, industries are responsible for 22% of the country's water consumption. Because it is part of such an important share, Maxiforja is concerned and seeks to contribute to the environment by treating the effluents produced in the company. Internally, we have set up plants to treat industrial and biological effluents in a primary and secondary manner. All the water used in our industry goes through the process, which follows the strictest guidelines. Effluent treatment involves two phases: in the first, there is a physical-chemical stage where, through a chemical reaction, the solid and liquid parts of the effluent are separated so that they can then be removed in a separation process. In the second phase, which is the biological phase, a series of microorganisms and bacteria are responsible for consuming the polluting organic matter through a respiratory process. With more than 800 employees and a continuous production of products, our own Effluent Treatment Plant (ETP) was inaugurated in 2016 and is a major market differentiator. This and other actions have earned us ISO 14.001 certification, which specifies the requirements of an Environmental Management System and proves our commitment to protecting the environment."
                     },
                     {
                         "titulo": "",
-                        "texto": "Com a utilização desse novo modal, foi necessário desenvolver carros de movimentação, que foram aperfeiçoados com conceitos padronizados e intercambiáveis. Entre suas vantagens estão o sistema de suspensão que garante maior estabilidade na movimentação e preservação do piso, calço de proteção anti-tombamento e sistema de freio estacionário."
+                        "texto": "With the use of this new mode of transport, it was necessary to develop handling trolleys, which were improved with standardized and interchangeable concepts. Their advantages include a suspension system that guarantees greater stability when moving and preserves the floor, anti-tip protection pads and a stationary brake system."
                     },
                     {
                         "titulo": "",
-                        "texto": "Segundo gestor da área de logística, Alan Camargo, a novidade ainda traz benefícios para o sistema produtivo da Maxiforja. “Neste formato, temos uma melhoria também na ergonomia, visto que o operador não precisa mais fazer esforço tracionando carros manualmente, pois o equipamento faz esse movimento”, comenta ele."
+                        "texto": "According to the logistics area manager, Alan Camargo, the novelty also brings benefits to Maxiforja's production system. 'In this format, we also have an improvement in ergonomics, since the operator no longer has to make the effort of pulling trolleys manually, as the equipment does this movement,' he comments."
                     },
                     {
                         "titulo": "",
-                        "texto": "Além das questões de segurança, o uso do novo modal traz algumas vantagens na operação como redução de paradas de linha, autonomia operacional da pintura, eliminação de movimentação de peças manuais e redução de espaço no chão de fábrica."
+                        "texto": "In addition to safety issues, the use of the new modal brings a number of advantages to the operation, such as a reduction in line stoppages, operational autonomy for painting, the elimination of manual parts handling and a reduction in space on the shop floor."
                     }
                 ]
             },
             "exportacao": {
-                "titulo": "PRÊMIO EXPORTAÇÃO RS 2022",
-                "subtitulo": "EXCELÊNCIA EXPORTADORA RECONHECIDA PELO PRÊMIO EXPORTAÇÃO RS - DESTAQUE SETORIAL NO SEGMENTO METALÚRGICO",
-                "texto": "Pelo sétimo ano consecutivo, a Maxiforja conquista o Prêmio Exportação RS. Este é o maior reconhecimento do Sul do país ao segmento exportador...",
+                "titulo": "EXPORTAÇÃO RS 2022 AWARD",
+                "subtitulo": "EXPORT EXCELLENCE RECOGNIZED BY THE RS EXPORT AWARD - SECTOR HIGHLIGHT IN THE METALLURGICAL SEGMENT",
+                "texto": "For the seventh year running, Maxiforja has won the Exportação Award. This is the highest recognition in the south of the country for the export segment...",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": " Pelo sétimo ano consecutivo, a Maxiforja conquista o Prêmio Exportação RS. Este é o maior reconhecimento do Sul do país ao segmento exportador, no qual a empresa foi agraciada mais uma vez com o Destaque Setorial - Metalúrgico."
+                        "texto": "For the seventh year running, Maxiforja has won the RS Export Award. This is the highest recognition in the south of the country for the export segment, and the company was once again awarded the Sectoral Highlight - Metallurgy."
                     },
                     {
                         "titulo": "",
-                        "texto": "A Maxiforja foi escolhida por se qualificar constantemente para encontrar novas oportunidades de crescimento. Acima de tudo, por mostrar que exportar é um objetivo permanente, com o desenvolvimento de competências e com energia para inovar."
+                        "texto": "Maxiforja was chosen for constantly qualifying itself to find new opportunities for growth. Above all, for showing that exporting is a permanent objective, with the development of skills and the energy to innovate."
                     },
                     {
                         "titulo": "",
-                        "texto": "Agradecemos a todos os clientes, parceiros e colaboradores que contribuíram para mais esta conquista!"
+                        "texto": "We would like to thank all our clients, partners and collaborators who have contributed to this achievement!"
                     }
                 ]
             },
             "supplier": {
-                "titulo": "PRÊMIO SUPPLIER AWARD 2022",
+                "titulo": "SUPPLIER AWARD 2022",
                 "subtitulo": "",
-                "texto": "Em novembro, a Maxiforja conquistou o Prêmio Supplier Award, da Meritor, nas categorias Qualidade, Logística, Competitividade e Desenvolvimento dentro do prazo...",
+                "texto": "In November, Maxiforja won Meritor's Supplier Award in the categories of Quality, Logistics, Competitiveness and On-Time Development...",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": "Em novembro, a Maxiforja conquistou o Prêmio Supplier Award, da Meritor, nas categorias Qualidade, Logística, Competitividade e Desenvolvimento dentro do prazo."
+                        "texto": "In November, Maxiforja won Meritor's Supplier Award in the categories of Quality, Logistics, Competitiveness and On-Time Development..."
                     },
                     {
                         "titulo": "",
-                        "texto": "Esta conquista vem através da análise de níveis de qualidade, de entrega nos prazos, de competitividade em relação ao preço, de novos desenvolvimentos – prazos de entrega – e proatividade em proposta de melhoria continua. Agradecemos a todos pela contribuição para esta conquista!"
+                        "texto": "This achievement comes from analyzing quality levels, on-time delivery, price competitiveness, new developments - delivery times - and proactivity in proposing continuous improvement. We thank everyone for their contribution to this achievement!"
                     }
                 ]
             },
             "100marcas": {
                 "titulo": "100 Marcas do RS",
-                "subtitulo": "UM ÍCONE DA IDENTIDADE EMPRESARIAL GAÚCHA - DESTAQUE NO LIVRO 100 MARCAS DO RS",
-                "texto": "Pensando nos diversos pontos essenciais de segurança no trabalho aliados ao setor de logística, a Maxiforja começou a trabalhar com um novo modal de movimentação...",
+                "subtitulo": "AN ICON OF  BUSINESS FROM RS IDENTITY - FEATURED IN THE BOOK 100 MARCAS DO RS",
+                "texto": "In 2022, Maxiforja was among the Rio Grande do Sul brands featured in the 2nd edition of Grupo Amanhã's 100 Marcas do Rio Grande do Sul Book. The publication highlights the history of established brands as icons of Rio Grande do Sul identity and business culture...",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": "Pensando nos diversos pontos essenciais de segurança no trabalho aliados ao setor de logística, a Maxiforja começou a trabalhar com um novo modal de movimentação. Através do uso de equipamentos Mastermover, a empresa passou a realizar o abastecimento das linhas de pintura, de usinagem e de solda de barras."
+                        "texto": "In 2022, Maxiforja was among the Rio Grande do Sul brands featured in the 2nd edition of Grupo Amanhã's 100 Marcas do Rio Grande do Sul Book. The publication highlights the history of established brands as icons of Rio Grande do Sul identity and business culture."
                     }
                 ]
             },
             "mastermover": {
-                "titulo": "Mastermover: mais segurança e melhorias na logística",
-                "subtitulo": "O NOVO MODAL DE MOVIMENTAÇÃO LOGÍSTICA DA MAXIFORJA FACILITA O ABASTECIMENTO DE OPERAÇÕES E GARANTE MAIS SEGURANÇA AOS COLABORADORES.",
-                "texto": "Em 2022, a Maxiforja ficou entre as marcas gaúchas destaque na 2ª edição do Livro 100 Marcas do RS, do Grupo Amanhã. A publicação ressalta a história de marcas consagradas como ícones da identidade e da cultura empresarial gaúcha...",
+                "titulo": "Mastermover: more security and improved logistics",
+                "subtitulo": "MAXIFORJA'S NEW LOGISTICS HANDLING FACILITATES THE SUPPLY OF OPERATIONS AND GUARANTEES GREATER SAFETY FOR EMPLOYEES.",
+                "texto": "With the various essential points of occupational safety in mind, allied to the logistics sector, Maxiforja has started working with a new mode of handling...",
                 "paragraph": [
                     {
                         "titulo": "",
-                        "texto": "Pensando nos diversos pontos essenciais de segurança no trabalho aliados ao setor de logística, a Maxiforja começou a trabalhar com um novo modal de movimentação. Através do uso de equipamentos Mastermover, a empresa passou a realizar o abastecimento das linhas de pintura, de usinagem e de solda de barras."
+                        "texto": "With the various essential points of occupational safety in mind, allied to the logistics sector, Maxiforja has started working with a new handling method. Using Mastermover equipment, the company now supplies the painting, machining and bar welding lines."
                     },
                     {
                         "titulo": "",
-                        "texto": "O Mastermover consiste em um rebocador elétrico utilizado para mover cargas através da movimentação de carros de maneira segura e eficiente, oferecendo capacidade de manobra e confiabilidade excepcionais. Por ser uma ferramenta compacta e elétrica, o Mastermover traz melhorias de segurança e ergonomia, onde não é necessário fazer esforço de tração manual. Além disso, com o novo modal, deixa de haver circulação intensa de pessoas e empilhadeiras no mesmo ambiente, o que diminui a possibilidade de acidentes."
+                        "texto": "The Mastermover is an electric tug used to move loads by moving trolleys safely and efficiently, offering exceptional maneuverability and reliability. As a compact, electric tool, the Mastermover brings improvements in safety and ergonomics, with no manual traction required. Besides, with the new modal, there is no more intense circulation of people and forklifts in the same environment, which reduces the possibility of accidents."
                     },
                     {
                         "titulo": "",
-                        "texto": "Com a utilização desse novo modal, foi necessário desenvolver carros de movimentação, que foram aperfeiçoados com conceitos padronizados e intercambiáveis. Entre suas vantagens estão o sistema de suspensão que garante maior estabilidade na movimentação e preservação do piso, calço de proteção anti-tombamento e sistema de freio estacionário."
+                        "texto": "With the use of this new mode of transport, it was necessary to develop handling trolleys, which were improved with standardized and interchangeable concepts. Their advantages include a suspension system that guarantees greater stability when moving and preserves the floor, anti-tip protection pads and a stationary brake system."
                     },
                     {
                         "titulo": "",
-                        "texto": "Segundo gestor da área de logística, Alan Camargo, a novidade ainda traz benefícios para o sistema produtivo da Maxiforja. “Neste formato, temos uma melhoria também na ergonomia, visto que o operador não precisa mais fazer esforço tracionando carros manualmente, pois o equipamento faz esse movimento”, comenta ele."
+                        "texto": "According to the logistics area manager, Alan Camargo, the novelty also brings benefits to Maxiforja's production system. 'In this format, we also have an improvement in ergonomics, since the operator no longer has to make the effort of pulling trolleys manually, as the equipment does this movement,' he comments."
                     },
                     {
                         "titulo": "",
-                        "texto": "Além das questões de segurança, o uso do novo modal traz algumas vantagens na operação como redução de paradas de linha, autonomia operacional da pintura, eliminação de movimentação de peças manuais e redução de espaço no chão de fábrica."
+                        "texto": "In addition to safety issues, the use of the new modal brings a number of advantages to the operation, such as a reduction in line stoppages, operational autonomy for painting, the elimination of manual parts handling and a reduction in space on the shop floor."
                     }
                 ]
             }
         },
         "sustentabilidade": {
             "ete": {
-                "menu": "Meio Ambiente",
-                "titulo": "Meio Ambiente",
-                "subtitulo": "Central de Tratamentos de Efluentes",
+                "menu": "Enviroment",
+                "titulo": "Enviroment",
+                "subtitulo": "Effluent Treatment Plant",
                 "texto": [
                     {
                         "titulo": "",
@@ -654,18 +654,18 @@
                     },
                     {
                         "titulo": "",
-                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "subtitulo": "Effluent Treatment Plant",
                         "texto": [
-                            "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
-                            "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "
+                            "At Maxiforja, environmental management is part of the organization's development strategy. We have two effluent treatment plants for the treatment and prevention of pollution, with modern, impressive infrastructure and a team trained to guarantee the effectiveness of the treatments and respect for the environment.",
+                            "The plants are divided into physical-chemical treatment, aimed at effluents from the production process, and biological treatment, aimed at sanitary effluents and complementing physical-chemical treatment."
                         ]
                     }
                 ]
             },
             "atuacao-social": {
-                "menu": "Atuação Social",
-                "titulo": "Atuação Social",
-                "subtitulo": "Central de Tratamentos de Efluentes",
+                "menu": "Social work",
+                "titulo": "Social work",
+                "subtitulo": "Effluent Treatment Plant",
                 "texto": [
                     {
                         "titulo": "",
@@ -676,7 +676,7 @@
                     },
                     {
                         "titulo": "",
-                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "subtitulo": "Effluent Treatment Plant",
                         "texto": [
                             "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
                             "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "
@@ -685,9 +685,9 @@
                 ]
             },
             "governancia-corporativa": {
-                "menu": "Governança corporativa",
-                "titulo": "Governança corporativa",
-                "subtitulo": "Central de Tratamentos de Efluentes",
+                "menu": "Corporate governance",
+                "titulo": "Corporate governance",
+                "subtitulo": "Effluent Treatment Plant",
                 "texto": [
                     {
                         "titulo": "",
@@ -698,7 +698,7 @@
                     },
                     {
                         "titulo": "",
-                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "subtitulo": "Effluent Treatment Plant",
                         "texto": [
                             "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
                             "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "

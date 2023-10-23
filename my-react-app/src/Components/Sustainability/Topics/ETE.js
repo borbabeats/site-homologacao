@@ -18,7 +18,7 @@ function ETE({ id }) {
 						{t('sustentabilidade.ete.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
 							{titulo && <h2 className='title' >{titulo}</h2>}
 							{subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
-							{texto && texto.map((text, index) => <p className="description mt-3 text-white bg-danger" key={index}> {text} </p>)}
+							{texto && texto.map((text, index) => <p className="description mt-3 text-white" key={index}> {text} </p>)}
 						</div>)}
 
 						<div className='d-flex text-center'>
