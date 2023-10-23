@@ -13888,7 +13888,14 @@ select::-moz-focus-inner {
   margin: 15px 3px;
   opacity: .8;
   padding: 10px 15px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  align-self: center
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-item {
+    align-self: center
+  }
 }
 
 
