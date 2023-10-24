@@ -156,9 +156,15 @@ a {
   text-decoration: none
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1216px) {
+@media screen and (min-width: 990px) and (max-width: 1216px) {
   .nav-link {
     font-size: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .nav-link p {
+    font-size: 1em !important;
   }
 }
 
@@ -18101,6 +18107,7 @@ img.img-certificate:hover {
   left: 0;
   height: 100%;
   overflow: hidden;
+  width: 18%;
 }
 
 .bg-maxi {

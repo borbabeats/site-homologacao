@@ -2,16 +2,16 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Container, Row, Col } from "reactstrap";
 import NavSideBar from "../Component/NavSideBar";
-import ChemicalLab from './Topics/ChemicalLab';
-import Metrology from './Topics/Metrology';
+/*import ChemicalLab from './Topics/ChemicalLab';*/
+/*import Metrology from './Topics/Metrology';*/
 import Forging from './Topics/Forging';
 import HeatTreatment from './Topics/HeatTreatment';
 import Machining_1 from './Topics/Machining_1';
-import Machining_2 from './Topics/Machining_2';
-import Expedition from './Topics/Expedition';
+/*import Machining_2 from './Topics/Machining_2';*/
+/*import Expedition from './Topics/Expedition';*/
 import ToolShop from './Topics/ToolShop';
 import MechanicalLaboratory from './Topics/MechanicalLaboratory';
-import MetallurgicalLaboratory from './Topics/MetallurgicalLaboratory';
+/*import MetallurgicalLaboratory from './Topics/MetallurgicalLaboratory';*/
 
 const ItemsNavLinkTechnology = [
 	{
@@ -26,15 +26,15 @@ const ItemsNavLinkTechnology = [
 		id: 3,
 		menu: "tecnologia.usinagem-1.menu",
 		href: "usinagem-1",
-	}, {
+	}, /*{
 		id: 4,
 		menu: "tecnologia.usinagem-2.menu",
 		href: "usinagem-2",
-	}, {
+	},*/ /*{
 		id: 5,
 		menu: "tecnologia.expedicao.menu",
 		href: "expedicao",
-	}, {
+	},*/ {
 		id: 6,
 		menu: "tecnologia.ferramentaria.menu",
 		href: "ferramentaria",
@@ -42,7 +42,7 @@ const ItemsNavLinkTechnology = [
 		id: 7,
 		menu: "tecnologia.laboratorio-mecanico.menu",
 		href: "laboratorio-mecanico",
-	}, {
+	}/*, {
 		id: 8,
 		menu: "tecnologia.laboratorio-metalurgico.menu",
 		href: "laboratorio-metalurgico",
@@ -54,7 +54,7 @@ const ItemsNavLinkTechnology = [
 		id: 10,
 		menu: "tecnologia.laboratorio-quimico.menu",
 		href: "laboratorio-quimico",
-	}
+	}*/
 ]
 
 function Technology() {
@@ -69,13 +69,13 @@ function Technology() {
 				<Forging id={'forjaria'} />
 				<HeatTreatment id={'tratamento-termico'} />
 				<Machining_1 id={'usinagem-1'} />
-				<Machining_2 id={'usinagem-2'} />
-				<Expedition id={'expedicao'} />
+				{/*<Machining_2 id={'usinagem-2'} />*/}
+				{/*<Expedition id={'expedicao'} />*/}
 				<ToolShop id={'ferramentaria'} />
 				<MechanicalLaboratory id={'laboratorio-mecanico'} />
-				<MetallurgicalLaboratory id={'laboratorio-metalurgico'} />
-				<Metrology id={'metrologia'} />
-				<ChemicalLab id={'laboratorio-quimico'} />
+				{/*<MetallurgicalLaboratory id={'laboratorio-metalurgico'} />*/}
+				{/*<Metrology id={'metrologia'} />*/}
+				{/*<ChemicalLab id={'laboratorio-quimico'} />*/}
 			</Col>
 		</Row>
 	</Container>;

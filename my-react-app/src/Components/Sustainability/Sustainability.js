@@ -2,8 +2,8 @@ import { Container, Row, Col } from "reactstrap";
 import React from 'react';
 import ETE from "./Topics/ETE";
 import NavSideBar from "../Component/NavSideBar";
-import SocialPerformance from "./Topics/SocialPerformance";
-import CorporateGovernance from "./Topics/CorporateGovernance";
+/*import SocialPerformance from "./Topics/SocialPerformance";*/
+/*import CorporateGovernance from "./Topics/CorporateGovernance";*/
 
 const ItemsNavLinkSustent = [
     {
@@ -12,7 +12,7 @@ const ItemsNavLinkSustent = [
         href: "ete",
    
     },
-    {
+    {/*
         id: 2,
         menu: "sustentabilidade.atuacao-social.menu",
         href: "atuacao-social",
@@ -22,7 +22,7 @@ const ItemsNavLinkSustent = [
         id: 3,
         menu: "sustentabilidade.governancia-corporativa.menu",
         href: "governancia-corporativa",
-   
+   */
     }
 ]
 
@@ -34,8 +34,8 @@ function Sustainability() {
             </Col>
             <Col xs={12} lg={10} sm={12} className="align-items-center justify-content-center bg-maxi " style={{ height: 'auto', padding: 0, }}>
                 <ETE id={'ete'} />
-                <SocialPerformance id={'atuacao-social'} />
-                <CorporateGovernance id={'governancia-corporativa'} />
+                {/*<SocialPerformance id={'atuacao-social'} />*/}
+                {/*<CorporateGovernance id={'governancia-corporativa'} />*/}
             </Col>
         </Row>
     </Container>

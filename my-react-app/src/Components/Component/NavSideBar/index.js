@@ -59,8 +59,8 @@ function NavSideBar({ ItemsNavLink }) {
             top: 0,
             left: 0,
             bottom: 0,
-            paddingTop: '8%',
-            paddingLeft: '.7%',
+            paddingTop: '10%',
+            paddingLeft: '.4%',
             cursor: 'pointer',
             paddingBottom: paddingBottom,
             backgroundColor: 'transparent',
@@ -76,9 +76,9 @@ function NavSideBar({ ItemsNavLink }) {
             activeClass='selected'
             className={`text-white`}
             active={activeSection === href}
-            style={{ height: `${100 / ItemsNavLink.length}%`, width: '90%' }}
+            style={{ height: '60px'/*`${100 / ItemsNavLink.length}%`*/, width: '100%' }}
         >
-            <p className='text-change-size =' style={{width: '80%'}}>{t(menu)}</p>
+            <p className='text-change-size =' style={{width: '100%'}}>{t(menu)}</p>
         </Nav.Link>)
         }
     </Nav>;

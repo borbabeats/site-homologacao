@@ -281,7 +281,6 @@
                         "subtitulo": "",
                         "texto": [
                             "8 Linhas de forjamento, sendo 3 robotizadas;",
-                            "8 Linhas de forjamento, sendo 3 robotizadas;",
                             "Linha automatizada de extrusão a quente;",
                             "Peças de 1 a 70 kg;",
                             "Resfriamento controlado e têmpera direta."
@@ -309,13 +308,13 @@
                         ],
                         "itens": [
                             {
-                                "titulo": "Mais de 10 fornos para tratamento térmico:",
+                                "titulo": "Mais de 10 fornos para tratamento térmico",
                                 "textos": [
+                                    "Possui x linhas de tratamento térmico, contemplando os processos de:",
                                     "Têmpera com atmosfera controlada;",
                                     "Revenimento;",
-                                    "Normalização;",
-                                    "Cementação;",
-                                    "Recozimento pleno."
+                                    "Normalização;", 
+                                    "Cementação."
                                 ]
                             }
                         ]
@@ -323,63 +322,31 @@
                 ]
             },
             "usinagem-1": {
-                "menu": "Usinagem 1",
+                "menu": "Usinagem 1 e 2",
                 "titulo": "Usinagem 1",
                 "texto": [
                     {
-                        "titulo": "Usinagem 1",
+                        "titulo": "Usinagem 1 e 2",
                         "subtitulo": "",
                         "texto": [
                             ""
                         ],
                         "itens": [
                             {
-                                "titulo": "Aproximadamente 100 máquinas de usinagem:",
+                                "titulo": "Aproximadamente 100 máquinas de usinagem, comtemplando:",
                                 "textos": [
                                     "Centros de Usinagem;",
                                     "Tornos Multitarefas;",
-                                    "Tornos CNC;",
                                     "Têmperas por indução;",
                                     "Retificas CNC;",
                                     "Geradoras Multiperfil;",
+                                    "Célula de Solda Robotizada;",
                                     "Brochadeiras;",
-                                    "Linhas Robotizadas."
+                                    "Linhas Robotizadas.",
+                                    "Pintura Líquida de Primer e Acabamento;"
                                 ]
                             }
                         ]
-                    }
-                ]
-            },
-            "usinagem-2": {
-                "menu": "Usinagem 2",
-                "titulo": "Usinagem 2",
-                "texto": [
-                    {
-                        "titulo": "Usinagem 2",
-                        "subtitulo": "",
-                        "texto": [
-                            "Célula de Solda Robotizada;",
-                            "Linha de pré-tratamento com 8 estágios;",
-                            "Pintura Líquida de Primer e Acabamento;",
-                            "Montagem de conjuntos."
-                        ],
-                        "itens": []
-                    }
-                ]
-            },
-            "expedicao": {
-                "menu": "Expedição",
-                "titulo": "Expedição",
-                "texto": [
-                    {
-                        "titulo": "Expedição",
-                        "subtitulo": "",
-                        "texto": [
-                            "Estrutura com layout inteligente;",
-                            "Modernas posições com fluxo de movimentação;",
-                            "Facilidade na operação e no fluxo logístico."
-                        ],
-                        "itens": []
                     }
                 ]
             },
@@ -391,36 +358,33 @@
                         "titulo": "Ferramentaria",
                         "subtitulo": "",
                         "texto": [
-                            "Inspeção Digital;",
-                            "High Speed Machines e máquinas de usinagem de 5 eixos;",
-                            "Desenvolvimento Compacto e Integrado",
-                            "Qform",
-                            "Siemens NX (CAD/CAM)",
-                            "Siemens Teamcenter (PLM)",
-                            "FEMAP (Siemens)",
-                            "Plant Simulation"
+                            "Equipadas com High Speed Machines e máquinas de usinagem de 5 eixos;",
+                            "Equipe interna de desenvolvimento utilizando, CAD, CAM e softwares de simulação."
                         ],
                         "itens": []
                     }
                 ]
             },
             "laboratorio-mecanico": {
-                "menu": "Laboratório de Testes e Ensaios Mecânicos",
-                "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                "menu": "Laboratórios",
+                "titulo": "Laboratórios",
                 "texto": [
                     {
-                        "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                        "titulo": "Laboratórios",
                         "subtitulo": "",
                         "texto": [
-                            "Validação de produtos;",
-                            "Ensaios de tração e compressão; impacto, fadiga linear, flexão rotativa e torcional, drop test e impactoCharpy e Izod;",
-                            "Requisitos de acordo com a ABNT NBR ISO/IEC 17025."
+                            "Testes e Ensaios Mecânicos:", "- Com capacidade de ensaios de tração e compressão, impacto, fadiga linear, flexão rotativa e torcional, drop teste e impacto Charpy e Izod.",
+                            "Metalúrgico:", "- Habilitado para ensaios de dureza e microduzera e análises Metalográficas e Expectrometria Óptica.",
+                            "Metrologia:", "- Equipado com tecnologias de Tridimensionais, Ruogsímetros e Equipamentos de Perfil.",
+                            "Químico:", "- Controle de qualidade no processo de do pré-tratamento (à base de fosfato de zinco tricatiônico), e da pintura líquida da empresa."
                         ],
-                        "itens": []
+                        "itens": [
+                            
+                        ]
                     }
                 ]
             },
-            "laboratorio-metalurgico": {
+           "laboratorio-metalurgico": {
                 "menu": "Laboratório Metalúrgico",
                 "titulo": "Laboratório Metalúrgico",
                 "texto": [
