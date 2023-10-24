@@ -45,7 +45,7 @@ function Footer() {
 	}
 
 	return <>
-		<button id="button" href='' className={classNameButtom} onClick={ClickInNavLinkOrNavbarBrand}></button>
+		<button id="button" href='' className={classNameButtom} onClick={ClickInNavLinkOrNavbarBrand} title='Para cima' ></button>
 		<footer className={"main-footer"} id="footer">
 			<Container>
 				<div className="footer-content px-0">

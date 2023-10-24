@@ -1,4 +1,5 @@
 import photo from '../../../Config/Images/Fotos Maxiatualidades/ete.webp'
+import photo2 from '../../../Config/Images/Fotos Maxiatualidades/tunel-verde.webp'
 import { Col, Container, Fade, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
@@ -15,16 +16,19 @@ function ETE({ id }) {
 				<Fade className="mt-3" baseClassActive={'show'} >
 					<Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
 						<h2 className="title mt-3 color-maxi-invert" style={{ fontWeight: '' }}>{t('sustentabilidade.ete.titulo')}</h2>
+						<img className='imgSustentability' src={photo2} alt="Árvores da Entrada" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '.9', background: 'rbga(0,0,0,0)', padding: 10 }} />
 						{t('sustentabilidade.ete.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
-							{titulo && <h2 className='title' >{titulo}</h2>}
-							{subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
+							{titulo && <h2 className='title' >{titulo}</h2> }
+							{subtitulo && <h3 className='color-maxi'> {subtitulo}  </h3>}
+							
 							{texto && texto.map((text, index) => <p className="description mt-3 text-black" key={index}> {text} </p>)}
+							
 						</div>)}
 
-						<div className='d-flex text-center'>
+						<div className='d-flex text-start'>
 							<Fade>
-								<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
-								<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+								<img className='imgSustentability' src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+								
 							</Fade>
 						</div>
 					</Col>

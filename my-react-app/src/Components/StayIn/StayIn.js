@@ -68,7 +68,7 @@ function StayIn() {
         const toggle = () => setModal(!modal);
 
         return <Col className="ml-auto mr-auto" md={15} lg={col} sm={15} key={id}>
-            <Card body color="light" className='' style={{ padding: 0, maxHeight: '45rem', minHeight: '45rem', border: 0 }}>
+           <a onClick={toggle}><Card body color="light" className='' style={{ padding: 0, maxHeight: '45rem', minHeight: '45rem', border: 0, cursor:'pointer' }}>
                 {img && <img alt={titulo} src={img} style={{ maxHeight: '15rem', width: 'auto', objectFit: 'cover', objectPosition: 'center', }} />}
                 <CardBody>
                     <CardTitle tag="h3" className='mb-2' > {t(titulo)} </CardTitle>
@@ -78,7 +78,7 @@ function StayIn() {
                         <Button className='btn-maxi-color'  onClick={toggle}> {t('geral.saiba-mais')} </Button>
                     </div>
                 </CardBody>
-            </Card>
+            </Card></a>
             <Modal isOpen={modal} toggle={toggle} fullscreen={'xl'} size={'xl'} >
                 <div style={{ display: 'block', alignItems: 'center', alignContent: 'center', textAlign: 'center', justifyContent: 'center', marginTop: '2rem', marginBottom: '2rem', borderBottom: '1px solid #dddddd' }}>
                     <h2 className="title color-maxi mt-3 px-4">{t(titulo)}</h2>

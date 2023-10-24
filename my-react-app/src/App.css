@@ -14879,18 +14879,19 @@ select::-moz-focus-inner {
   margin-bottom: 20px;
   position: relative;
   transition: box-shadow .2s ease, -webkit-transform .3s cubic-bezier(.34, 2, .6, 1);
-  transition: transform .3s cubic-bezier(.34, 2, .6, 1), box-shadow .2s ease;
+  /*transition: transform .3s cubic-bezier(.34, 2, .6, 1), box-shadow .2s ease;
   transition: transform .3s cubic-bezier(.34, 2, .6, 1), box-shadow .2s ease, -webkit-transform .3s cubic-bezier(.34, 2, .6, 1);
-  z-index: 1
+  z-index: 1*/
 }
 
 .card:not(.card-plain):hover {
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, .3);
-  transform: translateY(-10px);
+  /*transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
-  -moz-transform: translateY(-10px)
+  -moz-transform: translateY(-10px)*/
 }
+
 
 .card.card-refine:hover,
 .card.card-register:hover,
