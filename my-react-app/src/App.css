@@ -14892,6 +14892,11 @@ select::-moz-focus-inner {
   -moz-transform: translateY(-10px)*/
 }
 
+@media screen and (max-width: 820px) {
+  .imgHistoric {
+    max-height: 350px !important;
+  }
+}
 
 .card.card-refine:hover,
 .card.card-register:hover,

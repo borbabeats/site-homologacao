@@ -1,6 +1,7 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react'
+import texture from '../../../../Config/Images/History/texture-dot.svg'
 
 const items = [
     {
@@ -109,8 +110,9 @@ export default function Lines() {
                 <Navbar items={items} />
             </Col>
             {items && items.map(({ id, year, img, text }) => id === activeYear && <Row className="h-100">
-                <div className='div-animate-smaller ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '4%', left: '4%', fontSize: '18rem' }}>{year}</div>
-                <div className='div-animate-bigger ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '30%', right: '30%', fontSize: '40rem' }}>{year}</div>
+                <div className='div-animate-smaller ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>{year}</div>
+                <Image src={texture} className='' style={{position:'absolute', top: '50%', right: '0', width: '360px'}}></Image>
+                {/*<div className='div-animate-bigger ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '30%', right: '30%', fontSize: '40rem' }}>{year}</div>*/}
                 <Col lg={12} className="h-100">
                     <Row className="h-100">
                         <Col lg={6} sm={12} md={12} className="d-flex align-items-center">
@@ -124,7 +126,7 @@ export default function Lines() {
                             </div>
                         </Col>
                         <Col lg={6} sm={12} md={12} >
-                            <Image src={img} className='d-none d-md-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 15, position: 'absolute', bottom: '60%', right: '30% ', width: '60%', maxHeight: '420px' }} />
+                            <Image src={img} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ borderRadius: 0, position: 'absolute', bottom: '40%', right: '20% ', width: '60%', maxHeight: '520px' }} />
                         </Col>
                     </Row>
                 </Col>
@@ -138,7 +140,7 @@ export default function Lines() {
             </Col>
             {items && items.map(({ id, year, img, text }) => id === activeYear && <Row className="h-100">
                 <div className='div-animate-smaller ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '30%', left: '4%', fontSize: '6rem' }}>{year}</div>
-                <div className='div-animate-bigger ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '70%', right: '25%', fontSize: '15rem' }}>{year}</div>
+                {/*<div className='div-animate-bigger ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '70%', right: '25%', fontSize: '15rem' }}>{year}</div>*/}
                 <Col lg={12} className="h-100">
                     <Row className="h-100">
                         <Col lg={6} sm={12} md={12} className="d-flex align-items-center">
@@ -152,7 +154,7 @@ export default function Lines() {
                             </div>
                         </Col>
                         <Col xs={6} sm={12} md={12} >
-                            <Image src={img} className='d-flex d-sm-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 15, position: 'absolute', top: '0%', left: '30% ', width: '100%' }} />
+                            <Image src={img} className='d-flex d-sm-block div-animate-img mr-auto ml-auto imgHistoric' style={{ borderRadius: 0, position: 'absolute', top: '0%', left: '25% ', width: '100%' }} />
                         </Col>
                     </Row>
                 </Col>

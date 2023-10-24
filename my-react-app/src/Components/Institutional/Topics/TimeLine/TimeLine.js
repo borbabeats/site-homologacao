@@ -24,7 +24,7 @@ export default function TimeLine() {
 
     return <Container>
             <Row onClick={handleImageClick} className="img-time text-center items-align d-flex justify-content-center align-items-center mt-5" style={{ position: 'relative',  }}>
-                <img src={firstPhoto} alt="" className='img-shadow ' style={{ width: '60%', height: 'auto', borderRadius: 10 }} />
+                <img src={firstPhoto} alt="" className='img-shadow ' style={{ width: '60%', height: 'auto', borderRadius: 0 }} />
                 <SlControlPlay style={{ width: '4rem', height: '4rem', maxHeight: '50%', color: '#fff', position: 'absolute' }} />
             </Row>
             {expanded && <animated.div className="overlay bg-maxi" onClick={handleOverlayClick} style={springProps}>
