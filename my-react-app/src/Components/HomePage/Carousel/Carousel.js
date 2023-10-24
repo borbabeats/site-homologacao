@@ -84,8 +84,8 @@ export default function CarouselComponent(props) {
             <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
                 {slides}
-                <CarouselControl direction="prev" directionText=" " onClickHandler={previous} />
-                <CarouselControl direction="next" directionText=" " onClickHandler={next} />
+                <CarouselControl direction="prev" directionText=" " title='Anterior' onClickHandler={previous} />
+                <CarouselControl direction="next" directionText=" " title="Próximo" onClickHandler={next} />
             </Carousel>
         </div>
     );

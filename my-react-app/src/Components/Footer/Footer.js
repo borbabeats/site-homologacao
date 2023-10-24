@@ -53,14 +53,14 @@ function Footer() {
 						<Col sm={12} md={12} lg={3} className='pt-3 pb-0'>
 							<Link onClick={ClickInNavLinkOrNavbarBrand} to='/' className="text-white footer-title color-secondary">
 								<figure className="logo-box">
-									<img src={icon} alt="Logo-Maxiforja" style={{ width: '160px' }} />
+									<img src={icon} alt="Logo-Maxiforja" title='Maxiforja' style={{ width: '160px' }} />
 								</figure>
 							</Link>
 							<div className="text mt-1">
-								<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noreferrer">
+								<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noreferrer" title='Instagram'>
 									<BsInstagram className={isDesktop ? "icons-social-media" : "icons-social-media-mobile"} />
 								</a>
-								<a href="https://www.linkedin.com/company/maxiforja/" target="_blank" rel="noreferrer">
+								<a href="https://www.linkedin.com/company/maxiforja/" target="_blank" rel="noreferrer" title='Linkedin'>
 									<BsLinkedin className={isDesktop ? "icons-social-media" : "icons-social-media-mobile"} />
 								</a>
 							</div>

@@ -5,13 +5,13 @@ import { useTranslation } from "react-i18next";
 import Containers from "../../Component/Containers";
 
 const itemsManualCodesGuides = [
-    {
+    {/*
         name: 'institucional.manuais.arquivos.codigo-etica',
         link: require('../../../Config/PDF/Código de Ética.pdf'),
-    }, {
+*/}, {/*
         name: 'institucional.manuais.arquivos.guia-ambiental',
         link: require('../../../Config/PDF/Guia de Gestão Ambiental.pdf'),
-    }, {
+*/}, {
         name: 'institucional.manuais.arquivos.guia-visitante',
         link: require('../../../Config/PDF/Guia de Visitantes e Prestadores de Serviço.pdf'),
     },
@@ -38,7 +38,7 @@ function ManualsCodesGuides({ id }) {
                         <Row>
                             <Col sm="12" md="12" lg="6" className='text-left' > <p>{t(name)}</p> </Col>
                             <Col sm="12" md="12" lg="6" className='text-right align-items-baseline'>
-                                <a href={link} className='' target='_blank'><p className='maxi-color'>{t('institucional.manuais.arquivos.ver')} <BsBoxArrowUpRight /></p></a>
+                                <a href={link} className='' target='_blank' rel="noreferrer"><p className='maxi-color'>{t('institucional.manuais.arquivos.ver')} <BsBoxArrowUpRight /></p></a>
                             </Col>
                         </Row>
                     </ListGroupItem>)}

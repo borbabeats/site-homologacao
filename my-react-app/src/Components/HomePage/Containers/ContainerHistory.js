@@ -66,8 +66,8 @@ function PageHome() {
                     <h2 className="title mt-5">{t('home.historia')}</h2>
                     <div className='d-flex text-center'>
                         <Fade>
-                            <img src={imageFirst} alt="Primeira Sede" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
-                            <img src={FotosAereaHome} alt="Sede Atual" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+                            <img src={imageFirst} alt="Primeira Sede" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+                            <img src={FotosAereaHome} alt="Sede Atual" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
                         </Fade>
                     </div>
                     <p className="description pt-3 px-3" > {t('home.texto-historia')} </p>

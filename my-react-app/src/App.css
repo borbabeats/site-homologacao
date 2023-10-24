@@ -18078,19 +18078,18 @@ td.rdtYear:hover {
 
 
 img.img-certificate {
-  border-radius: 15px !important;
+  border-radius: 0;
   object-fit: cover;
   object-position: center;
   transition: all .5s ease;
-  border-radius: 1 5px !important;
 }
 
-img.img-certificate:hover {
+/*img.img-certificate:hover {
   object-fit: cover;
   object-position: center;
   -webkit-transform: scale(1.07);
   transform: scale(1.07)
-}
+}*/
 
 .containers-items {
   background-image: linear-gradient(180deg, #001f3d, #00458A)
@@ -18483,9 +18482,9 @@ ul {
 
 .selected>.text-change-size {
   color: #f25500;
-  -webkit-transform: scale(1.1);
+ /* -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
+*/}
 
 /* Estilos adicionais conforme necessário */
 
@@ -18534,15 +18533,16 @@ ul {
   border: 1px solid;
   box-sizing: border-box;
   transition: all .5s ease;
+  padding: 5px;
   /* background-color: ; */
   
 
 }
 
 .grid-container:hover {
-  -webkit-transform: scale(1.2);
+  /*-webkit-transform: scale(1.1);
   transform: scale(1.1);
-  padding: 10px;
+  padding: 10px;*/
   
 }
 

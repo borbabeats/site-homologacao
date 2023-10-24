@@ -44,9 +44,9 @@ function ContainersItems() {
 
     const ItemsApresentationComponent = ({ col, id, src, title, className}) => {
         return (<Col md={col} key={id} >
-            <Card className="card-profile card-plain " >
+            <Card className="card-profile card-plain "  >
                 <Link to={'/produtos'} onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ padding: 0, margin: 0, border: 0 }}>
-                    <div className="grid-container " style={{ borderRadius: 10, backgroundColor : '#757575' }} >
+                    <div className="grid-container " style={{ borderRadius: 0, backgroundColor : '#757575' }} >
                         {src && src.map((m, index) => <div className="grid-item w-100" key={index}>
                             <img alt="..." src={m} className={className}/>
                         </div>)}

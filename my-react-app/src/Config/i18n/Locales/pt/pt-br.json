@@ -304,17 +304,14 @@
                         "titulo": "Tratamento Térmico",
                         "subtitulo": "",
                         "texto": [
-                            "Capacidade: até 15.000 toneladas/ano;"
+                            "Capacidade: até 15.000 toneladas/ano;",
+                            "Possui x linhas de tratamento térmico, contemplando os processos de: Têmpera com atmosfera controlada, Têmpera com atmosfera controlada, Revenimento, Normalização e Cementação." 
                         ],
                         "itens": [
                             {
-                                "titulo": "Mais de 10 fornos para tratamento térmico",
+                                "titulo": "",
                                 "textos": [
-                                    "Possui x linhas de tratamento térmico, contemplando os processos de:",
-                                    "Têmpera com atmosfera controlada;",
-                                    "Revenimento;",
-                                    "Normalização;", 
-                                    "Cementação."
+                                    
                                 ]
                             }
                         ]
@@ -322,28 +319,21 @@
                 ]
             },
             "usinagem-1": {
-                "menu": "Usinagem 1 e 2",
+                "menu": "Usinagem",
                 "titulo": "Usinagem 1",
                 "texto": [
                     {
-                        "titulo": "Usinagem 1 e 2",
+                        "titulo": "Usinagem",
                         "subtitulo": "",
                         "texto": [
-                            ""
+                            "Aproximadamente 100 máquinas de usinagem, comtemplando:",
+                            "Centros de Usinagem, Tornos Multitarefas, Têmperas por indução, Retificas CNC, Geradoras Multiperfil, Célula de Solda Robotizada, Pintura Líquida de Primer e Acabamento."
                         ],
                         "itens": [
                             {
-                                "titulo": "Aproximadamente 100 máquinas de usinagem, comtemplando:",
+                                "titulo": " ",
                                 "textos": [
-                                    "Centros de Usinagem;",
-                                    "Tornos Multitarefas;",
-                                    "Têmperas por indução;",
-                                    "Retificas CNC;",
-                                    "Geradoras Multiperfil;",
-                                    "Célula de Solda Robotizada;",
-                                    "Brochadeiras;",
-                                    "Linhas Robotizadas.",
-                                    "Pintura Líquida de Primer e Acabamento;"
+                                    
                                 ]
                             }
                         ]
@@ -358,7 +348,7 @@
                         "titulo": "Ferramentaria",
                         "subtitulo": "",
                         "texto": [
-                            "Equipadas com High Speed Machines e máquinas de usinagem de 5 eixos;",
+                            "Equipada com High Speed Machines e máquinas de usinagem de 5 eixos;",
                             "Equipe interna de desenvolvimento utilizando, CAD, CAM e softwares de simulação."
                         ],
                         "itens": []
@@ -683,7 +673,7 @@
             
         },
         "contato": {
-            "endereco": "Endereço",
+            "endereco": "Localização",
             "fale-conosco": "Fale Conosco",
             "telefone": "Telefone",
             "canal-denuncia": "Canal de Denúncia",
