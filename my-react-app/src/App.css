@@ -320,6 +320,30 @@ progress {
   vertical-align: initial
 }
 
+/*.dropdown-toggle {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}*/
+.dropdown-toggle.active p{
+  color:#f25500 !important;
+}
+
+.dropdown-toggle::after {
+  content: '';
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.dropdown-toggle .active > .dropdown-toggle::after {
+  background-color: #f25500 !important;
+}
+
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto
@@ -18545,12 +18569,7 @@ ul {
 
 }
 
-.grid-container:hover {
-  /*-webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  padding: 10px;*/
-  
-}
+
 
 .grid-item {
   display: flex;
