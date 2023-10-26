@@ -4,7 +4,7 @@ import { SlControlPlay } from 'react-icons/sl'
 import { Container, Row } from "reactstrap"
 import { IoMdClose } from "react-icons/io"
 import { useState } from "react"
-import Lines from "./Lines"
+import NewLines from "./NewLines"
 
 export default function TimeLine() {
     const [expanded, setExpanded] = useState(false)
@@ -29,7 +29,7 @@ export default function TimeLine() {
             </Row>
             {expanded && <animated.div className="overlay bg-maxi" onClick={handleOverlayClick} style={springProps}>
                 <button className="close-button" onClick={handleCloseClick}> <IoMdClose style={{ height: 30, width: 30 }} /> </button>
-                <Lines />
+                <NewLines />
             </animated.div>}
     </Container>
 }

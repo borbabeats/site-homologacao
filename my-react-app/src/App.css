@@ -324,7 +324,7 @@ progress {
   background-color: transparent !important;
   border-color: transparent !important;
 }*/
-.dropdown-toggle.active p{
+.dropdown-toggle.show p{
   color:#f25500 !important;
 }
 

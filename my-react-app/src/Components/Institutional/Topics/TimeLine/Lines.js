@@ -114,7 +114,7 @@ export default function Lines() {
         return <nav style={{ zIndex: 90, margin: 0 }}>
             <ul className="navbar d-sm-inline-flex d-flex" style={{ zIndex: 91, backgroundColor: 'transparent' }}>
                 {items && items.map(({ id, decade, index}) => {
-                    return <DropdownButton className={`${decade} nav-item  ${activeYear === id && 'active'}` } onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`} style={{backgroudColor: 'red'}} title={decade}>
+                    return <DropdownButton className={`${decade} nav-item  ${activeYear === id && 'active'}` } onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`} title={decade}>
                         {/*<span className="year">{decade}</span>*/}                   
                     <DropdownMenu>
                         {items && items.map(({ yearsOfDecade: {year} }) => {

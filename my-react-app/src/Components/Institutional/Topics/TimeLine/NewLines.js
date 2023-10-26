@@ -111,19 +111,51 @@ export default function NewLines() {
     setActiveYear(yearId);
   };
 
-  return (
-    <div>
+
+
+ 
+
+  return  (   
+    
+      <Container fluid className='vh-100'>
+        <Col>
       <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
-    </div>
+      </Col>
+        {items && items.map(({ id, activeYear, decadeItem, img, text}) => id === activeYear && <Row className='h-100'>
+          <div className='div-animate-smaller ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>teste</div>
+          <Image src={texture} className='' style={{position: 'absolute', top: '50%', right: '0', width: '360px'}} />
+          <Col lg={12} className='h-100'>
+            <Row className='h-100'>
+              <Col lg={6} sm={12} md={12} className='d-flex align-items-center' >
+                <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white '>
+                <div style={{ borderRadius: 15, position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
+                    <p style={{ fontSize: '2rem' }}>{text}</p>
+                </div>
+                </div>
+                <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'> 
+                  <p>{text}</p>
+                </div>
+              </Col>
+              <Col xs={6} sm={12} md={12}>
+                <Image src={img} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ borderRadius: 0, position: 'absolute', bottom:'40%', right: '20%', width: '60%', maxHeight:'520px' }} />
+              </Col>
+            </Row>
+          </Col>
+        </Row>)}
+      </Container>
+ 
+    
   );
+
+ 
 }
 
 const Navbar = ({ items, activeYear, handleYearClick }) => {
   return (
     <nav style={{ zIndex: 90, margin: 0 }}>
-      <ul className="navbar d-sm-inline-flex d-flex">
+      <ul className="navbar d-sm-inline-flex d-flex" style={{ zIndex: 91, backgroundColor: 'transparent' }}>
         {items.map((decadeItem, id) => (
-          <DropdownButton className={`${decadeItem} nav-item  ${activeYear === id && 'active'}` } key={decadeItem.id} title={decadeItem.decade}>
+          <DropdownButton className={`${decadeItem} nav-item  ${activeYear === id && 'show'}` } key={decadeItem.id} title={decadeItem.decade}>
             <DropdownMenu>
               {decadeItem.yearsOfDecade.map((yearItem) => (
                 <DropdownItem
@@ -143,3 +175,5 @@ const Navbar = ({ items, activeYear, handleYearClick }) => {
 
 
 };
+
+
