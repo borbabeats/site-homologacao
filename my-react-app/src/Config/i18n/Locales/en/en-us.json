@@ -163,11 +163,11 @@
             },
             "manuais": {
                 "menu": "Manuals, Codes and Guides",
-                "titulo": "Manuals, Codes and Guides",
+                "titulo": "Guides",
                 "texto": [
                     {
                         "titulo": "",
-                        "subtitulo": "Below is the list of materials available for download:",
+                        "subtitulo": "Materials available for download:",
                         "texto": [
                             ""
                         ]
@@ -300,17 +300,14 @@
                         "titulo": "Heat Treatment",
                         "subtitulo": "",
                         "texto": [
-                            "Capacity: up to 15,000 tons/year;"
+                            "Capacity: up to 15,000 tons/year;",
+                            "More than 10 furnaces for heat treatment, including Controlled atmosphere tempering, tempering, normalizing and cementation processes."
                         ],
                         "itens": [
                             {
-                                "titulo": "More than 10 furnaces for heat treatment:",
+                                "titulo": "",
                                 "textos": [
-                                    "Controlled atmosphere tempering;",
-                                    "Tempering;",
-                                    "Normalization;",
-                                    "Cementation;",
-                                    "Full annealing."
+                                   
                                 ]
                             }
                         ]
@@ -318,66 +315,30 @@
                 ]
             },
             "usinagem-1": {
-                "menu": "Machining 1",
+                "menu": "Machining",
                 "titulo": "Machining 1",
                 "texto": [
                     {
-                        "titulo": "Machining 1",
+                        "titulo": "Machining",
                         "subtitulo": "",
                         "texto": [
-                            ""
+                            "Approximately 100 machining machines, including:",
+                            "Machining Centers, Multitasking Lathes, Induction hardening machines, CNC grinders, multi-profile generators, robotic welding cells, primer and finish liquid painting."
+
                         ],
                         "itens": [
                             {
-                                "titulo": "Approximately 100 machining machines:",
+                                "titulo": "",
                                 "textos": [
-                                    "Machining Centers",
-                                    "Multitasking Lathes;",
-                                    "CNC Lathes;",
-                                    "Induction hardening machines;",
-                                    "CNC Grinders;",
-                                    "Multiprofile Generators;",
-                                    "Broaching machines;",
-                                    "Robotic lines."
+                                 
                                 ]
                             }
                         ]
                     }
                 ]
             },
-            "usinagem-2": {
-                "menu": "Machining 2",
-                "titulo": "Machining 2",
-                "texto": [
-                    {
-                        "titulo": "Machining 2",
-                        "subtitulo": "",
-                        "texto": [
-                            "Robotic Welding Cell;",
-                            "8-stage pre-treatment line;",
-                            "Liquid Primer and Finish Paint;",
-                            "Assembling sets."
-                        ],
-                        "itens": []
-                    }
-                ]
-            },
-            "expedicao": {
-                "menu": "Shipping",
-                "titulo": "Shipping",
-                "texto": [
-                    {
-                        "titulo": "Shipping",
-                        "subtitulo": "",
-                        "texto": [
-                            "Structure with intelligent layout;",
-                            "Modern positions with movement flow;",
-                            "Ease of operation and logistics flow."
-                        ],
-                        "itens": []
-                    }
-                ]
-            },
+            
+           
             "ferramentaria": {
                 "menu": "Toolmaking",
                 "titulo": "Toolmaking",
@@ -386,30 +347,25 @@
                         "titulo": "Toolmaking",
                         "subtitulo": "",
                         "texto": [
-                            "Digital Inspection;",
-                            "High Speed Machines and 5-axis machining centers;",
-                            "Compact and integrated development",
-                            "Qform",
-                            "Siemens NX (CAD/CAM)",
-                            "Siemens Teamcenter (PLM)",
-                            "FEMAP (Siemens)",
-                            "Plant Simulation"
+                            "Equipped with High Speed Machines and 5-axis machining machines",
+                            "In-house development team using CAD, CAM and simulation software."
                         ],
                         "itens": []
                     }
                 ]
             },
             "laboratorio-mecanico": {
-                "menu": "Mechanical Testing Laboratory",
-                "titulo": "Mechanical Testing Laboratory",
+                "menu": "Labs",
+                "titulo": "Labs",
                 "texto": [
                     {
-                        "titulo": "Mechanical Testing Laboratory",
+                        "titulo": "Labs",
                         "subtitulo": "",
                         "texto": [
-                            "Product validation;",
-                            "Tensile and compression tests; impact, linear fatigue, rotary and torsional bending, drop test e impactoCharpy and Izod;",
-                            "Requirements according to ABNT NBR ISO/IEC 17025."
+                            "Mechanical Testing and Testing:", "- Capable of tensile and compression testing, impact, linear fatigue, rotary and torsional bending, drop testing and Charpy and Izod impact.",
+                            "Metallurgical:", "- Capable of hardness and microhardness testing, metallographic analysis and optical spectrometry.",
+                            "Metrology:", "- Equipped with three-dimensional technologies, rhodographs and profiling equipment.",
+                            "Chemical:", "- Quality control in the pre-treatment process (based on tricalcium zinc phosphate), and the company's liquid paint."
                         ],
                         "itens": []
                     }
@@ -709,7 +665,7 @@
             
         },
         "contato": {
-            "endereco": "Address",
+            "endereco": "Location",
             "fale-conosco": "Contact Us",
             "telefone": "Phone number",
             "canal-denuncia": "Denunciation Channel",

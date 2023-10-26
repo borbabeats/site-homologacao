@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image, DropdownMenu, DropdownItem } from 'react-bootstrap'
+import { Container, Row, Col, Image, DropdownMenu, DropdownItem, DropdownToggle } from 'react-bootstrap'
 import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react'
 import DropdownButton from 'react-bootstrap/DropdownButton'
@@ -114,7 +114,7 @@ export default function Lines() {
         return <nav style={{ zIndex: 90, margin: 0 }}>
             <ul className="navbar d-sm-inline-flex d-flex" style={{ zIndex: 91, backgroundColor: 'transparent' }}>
                 {items && items.map(({ id, decade, index}) => {
-                    return <DropdownButton className={`${decade} nav-item  ${activeYear === id && 'active'}` } onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`} title={decade}>
+                    return <DropdownToggle className={`${decade} nav-item  ${activeYear === id && 'active'}` } onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`} title={decade}>
                         {/*<span className="year">{decade}</span>*/}                   
                     <DropdownMenu>
                         {items && items.map(({ yearsOfDecade: {year} }) => {
@@ -124,7 +124,7 @@ export default function Lines() {
                        }
                     
                     </DropdownMenu>
-                    </DropdownButton>
+                    </DropdownToggle>
                 })}
             </ul>
         </nav>
