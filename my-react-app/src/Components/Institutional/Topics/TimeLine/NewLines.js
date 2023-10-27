@@ -196,7 +196,7 @@ export default function NewLines() {
   /*Elemento do Navbar*/
   const Navbar = ({ items, activeYear, handleYearClick }) => {
     return (
-      <nav style={{ zIndex: 90, margin: 0 }}>
+      <nav style={{ zIndex: 90, margin: '0 14px 0 0' }}>
         <ul className="navbar d-sm-inline-flex d-flex" style={{ zIndex: 91, backgroundColor: 'transparent' }}>
         {items.map((decadeItem, id) => (
         

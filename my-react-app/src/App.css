@@ -330,10 +330,10 @@ progress {
 .dropdownbutton.show > .btn-primary::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 15px;
   left: 50%;
   width: 1px;
-  height: 13px;
+  height: 8px;
   background-color: #f25500;
 }
 
@@ -3339,7 +3339,7 @@ input[type=submit].btn-block {
 .dropdownbutton > .btn-primary::after {
   content: '';
   position: absolute;
-  top: 4rem;
+  top: 3.3rem;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -18476,7 +18476,7 @@ ul {
 .close-button {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 10px;
   padding: 5px 10px;
   background-color: transparent;
   color: #fff;
