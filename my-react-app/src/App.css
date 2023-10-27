@@ -18334,7 +18334,7 @@ ul {
 /* Aplicando a animação à div */
 .div-animate-smaller {
   animation-name: entrada;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -18369,14 +18369,14 @@ ul {
 
 .div-animate-img {
   animation-name: entrada-img;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-fill-mode: both;
 }
 
 
 .fade-in {
   opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
@@ -18465,7 +18465,7 @@ ul {
 .close-button {
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 10px;
   padding: 5px 10px;
   background-color: transparent;
   color: #fff;

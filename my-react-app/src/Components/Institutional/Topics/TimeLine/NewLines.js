@@ -4,9 +4,6 @@ import { useState } from 'react'
 import texture from '../../../../Config/Images/History/texture-dot.svg'
 
 
-
-
-
 const items = [
     {
         id: 1,
@@ -168,7 +165,7 @@ export default function NewLines() {
 };
 
 return !isMobile ? 
-  <Container fluid className='vh-100'>
+ <Container fluid className='vh-100'>
     {/* Botoes de navegação*/}
     <div>
       <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
@@ -185,7 +182,7 @@ return !isMobile ?
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
               <p style={{ fontSize: '2rem' }}>{selectedText}</p>
             </div>
-          </div> {/*texto mobile*/}
+          </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
             <p style={{ fontSize: '2rem' }}>{selectedText}</p>
           </div>
@@ -198,17 +195,29 @@ return !isMobile ?
     </Col>
   </Container>
 
-  /*is Mobile*/
-:  <Container fluid>
-    {/* Botoes de navegação*/}
-    <div style={{position: 'absolute', top: '0', left: '0'}}>
-      <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
-    </div>
-     {/*Textura de fundo*/}
-     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '240px' }}  />
-     {/*Elementos*/}
-     <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', fontSize: '10rem',left: '4%' }}>{selectedYear}</div>
-  </Container>
-
+   /*is Mobile*/
+   : <Container fluid>
+   {/* Botoes de navegação*/}
+   <div style={{position: 'absolute', top: '0', left: '0'}}>
+     <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
+   </div>
+    {/*Textura de fundo*/}
+    <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '240px' }}  />
+    {/*Ano selecionado*/}
+    <div className='div-animate-smaller ' style={{ color: '#484848', position:'absolute', top: '9%', fontSize: '9.5rem', left: '-2%' }}>{selectedYear}</div>
+     <Col sm={6} className='h-100'>
+       <Row className='h-100'>
+         <Col sm={12} className='d-flex align-items-center'>
+          {/*Texto selecionado*/}
+         <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
+            <p style={{ fontSize: '1.5rem' }}>{selectedText}</p>
+          </div>
+         </Col>
+         <Col sm={6}>
+            <Image src={selectedImage} className='d-flex d-sm-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', top: '0', right: '20%', width: '60%', maxHeight: '320px' }}/>
+        </Col>
+       </Row>
+     </Col>
+ </Container>
 
 }
