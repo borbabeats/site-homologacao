@@ -119,6 +119,8 @@ const items = [
 export default function NewLines() {
   const [activeYear, setActiveYear] = useState(items[0].id);
   const [selectedImage, setSelectedImage] = useState('')
+  const [selectedText, setSelectedText] = useState('');
+  const [selectedYear, setSelectedYear] = useState('')
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleYearClick = (yearId) => {
@@ -128,6 +130,8 @@ export default function NewLines() {
 
     if (selectedYear) {
       setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
+      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
+      setSelectedYear(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).year)
     }
   };
 
@@ -172,31 +176,38 @@ return !isMobile ?
     {/*Textura de fundo*/}
     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '360px' }}  />
     
-    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>teste</div>
+    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>{selectedYear}</div>
     <Col lg={12} className='h-100'>
       <Row className='h-100'> 
         <Col lg={6} sm={12} md={12} className='d-flex align-items-center'>
           {/*texto desktop*/}
           <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white'>
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
-              <p style={{ fontSize: '2rem' }}>Selecione uma das décadas para começar.</p>
+              <p style={{ fontSize: '2rem' }}>{selectedText}</p>
             </div>
           </div> {/*texto mobile*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
-            <p style={{ fontSize: '2rem' }}>Selecione uma das décadas para começar.</p>
+            <p style={{ fontSize: '2rem' }}>{selectedText}</p>
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' />
-        Imagem
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxHeight: '520px' }}/>
+       
         </Col>
       </Row>
     </Col>
   </Container>
 
-
-: <Container>
-  <h1 className='text-white'>MOBILE HERE!!!</h1>
+  /*is Mobile*/
+:  <Container fluid>
+    {/* Botoes de navegação*/}
+    <div style={{position: 'absolute', top: '0', left: '0'}}>
+      <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
+    </div>
+     {/*Textura de fundo*/}
+     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '240px' }}  />
+     {/*Elementos*/}
+     <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', fontSize: '10rem',left: '4%' }}>{selectedYear}</div>
   </Container>
 
 
