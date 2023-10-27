@@ -118,10 +118,17 @@ const items = [
 
 export default function NewLines() {
   const [activeYear, setActiveYear] = useState(items[0].id);
+  const [selectedImage, setSelectedImage] = useState('')
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleYearClick = (yearId) => {
     setActiveYear(yearId);
+    const selectedYear = items.find((decadeItem) => 
+    decadeItem.yearsOfDecade.find((yearItem) => yearItem.id === yearId))
+
+    if (selectedYear) {
+      setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
+    }
   };
 
 
@@ -180,7 +187,7 @@ return !isMobile ?
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src='#'className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' />
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' />
         Imagem
         </Col>
       </Row>
