@@ -324,6 +324,17 @@ progress {
 .dropdowntoggle {
   background-color: #fff !important;
   border: #fff !important;
+  width: 100px;
+}
+
+.dropdownbutton.show > .btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 13px;
+  background-color: #f25500;
 }
 
 .dropdownbutton {
@@ -2662,7 +2673,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+  box-shadow: none /*0 0 0 .2rem rgba(38, 143, 255, .5)*/
 }
 
 .btn-secondary {
@@ -3325,7 +3336,7 @@ input[type=submit].btn-block {
   white-space: nowrap
 }
 
-.dropdown-toggle:after {
+.dropdownbutton > .btn-primary::after {
   content: '';
   position: absolute;
   top: 4rem;
