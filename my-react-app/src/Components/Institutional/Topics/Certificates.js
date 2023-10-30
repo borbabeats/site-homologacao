@@ -15,7 +15,7 @@ export default function Certification({ id }) {
         bground={'bg-white'}
         style={{
             padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px')
-            , borderStartStartRadius: 10, paddingBottom: '2rem'
+            , borderStartStartRadius: 10
         }}
     >
         <div className='mt-3 d-flex text-center'>

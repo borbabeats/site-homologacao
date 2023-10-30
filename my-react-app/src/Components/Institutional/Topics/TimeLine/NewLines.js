@@ -190,8 +190,7 @@ export default function NewLines() {
 
     if (selectedYear) {
       setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
-      
-      /*setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)*/
+      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
       setSelectedYear(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).year)
     }
   };
