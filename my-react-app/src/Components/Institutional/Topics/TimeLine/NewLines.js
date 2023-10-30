@@ -193,6 +193,28 @@ export default function NewLines() {
     }
   };
 
+  // Select next year
+  const selectNextYear = () => {
+    const currentIndex = items.findIndex(
+      (decadeItem) => decadeItem.yearsOfDecade.some((yearItem) => yearItem.id === activeYear)
+      
+    )
+     
+      if (currentIndex !== -1) {
+        const currentDecade = items[currentIndex]
+        const yearIndex = currentDecade.yearsOfDecade.findIndex((yearItem) => yearItem.id === activeYear)
+
+        if (yearIndex !== -1 && yearIndex < currentDecade.yearsOfDecade.length -1) {
+          const nextYearId = currentDecade.yearsOfDecade[yearIndex + 1].id
+          setActiveYear(nextYearId)
+        } else if (currentIndex < items.length -1) {
+          const nextDecade = items[currentIndex + 1]
+          setActiveYear(nextDecade.yearsOfDecade[0].id)
+          console.log(yearIndex)
+        }
+      }
+  }
+
   /*Elemento do Navbar*/
   const Navbar = ({ items, activeYear, handleYearClick }) => {
     return (
@@ -239,9 +261,9 @@ return !isMobile ?
     <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>{selectedYear}</div>
     <Col lg={12} className='h-100'>
       <Row className='h-100'> 
-        <Col lg={6} sm={12} md={12} className='d-flex align-items-center'>
+        <Col lg={6} sm={12} md={12} className='d-flex align-items-center' >
           {/*texto desktop*/}
-          <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white'>
+          <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white' >
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
               {wasClicked !== 1
               ? <p style={{ fontSize: '2rem' }}>{selectedText}</p>
@@ -249,7 +271,7 @@ return !isMobile ?
               }  
               {/*Arrows para troca de anos*/}
               <MdKeyboardArrowLeft/>  
-              <MdKeyboardArrowRight/>            
+              <MdKeyboardArrowRight onClick={selectNextYear} style={{ cursor: 'pointer'}}/>            
             </div>
           </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
@@ -259,7 +281,7 @@ return !isMobile ?
             }
             {/*Arrows para troca de anos*/}
             <MdKeyboardArrowLeft/>  
-            <MdKeyboardArrowRight/> 
+            <MdKeyboardArrowRight onClick={selectNextYear}/> 
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
