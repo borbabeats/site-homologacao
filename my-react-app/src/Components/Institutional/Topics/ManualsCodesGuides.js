@@ -22,7 +22,7 @@ function ManualsCodesGuides({ id }) {
     const isDesktop = useMediaQuery({ minWidth: 992 });
 
     return <Containers
-        style={{ minHeight: '70vh', padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px'), paddingBottom: '2rem', borderEndStartRadius: 20 }}
+        style={{ minHeight: '70vh', padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px'), borderEndStartRadius: 20 }}
         texto={'institucional.manuais.texto'}
         h2={'institucional.manuais.titulo'}
         bground={`bg-white`}

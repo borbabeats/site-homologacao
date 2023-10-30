@@ -3,21 +3,22 @@ import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react'
 import texture from '../../../../Config/Images/History/texture-dot.svg'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
+import { useTranslation } from 'react-i18next';
 
 const items = [
     {
         id: 1,
 		decade: "1960",
 		yearsOfDecade: [
-				{     id: 'a',
+				{     id: '1963',
 				      year: "1963",
         			img: require('../../../../Config/Images/Home/firstPhoto.webp'),
-        			text: "Constituição da CIME - Companhia Industrial de Materiais Elétricos com a finalidade de produzir eletroferragem galvanizada para rede de energia elétrica"
+        			text: 'institucional.historico.1963'
                 },
-				{     id: 'b',
+				{     id: '1968',
         			year: "1968",
         			img: require('../../../../Config/Images/History/1968.webp'),
-        			text: "Início da gestão da Família Veit"
+        			text: 'institucional.historico.1968'
                 }		
 			]
 	},
@@ -25,17 +26,17 @@ const items = [
         id: 2,
 		decade: "1970",
 		yearsOfDecade: [
-				{
-            id: 'c',
+				  {
+            id: '1973',
 				    year: "1973",
 				    img: require('../../../../Config/Images/History/1973.webp'),
-        		text: "A empresa se transfere para o atual endereço, em terreno de 26000m² e área construída de 1600m². Inaugurada a Forjaria I, com Martelo Banning de 25kj"
+        		text: 'institucional.historico.1973'
                 },
-				{
-              id: 'd',
-        			year: "1975",
-        			img: require('../../../../Config/Images/History/1975.webp'),
-        			text: "Entra em operação Martelo Banning de 50 kj."
+				  {
+                id: '1975',
+        			  year: "1975",
+        			  img: require('../../../../Config/Images/History/1975.webp'),
+        			  text: 'institucional.historico.1975'
                 }
             ]
 	},
@@ -44,10 +45,10 @@ const items = [
 		decade: "1980",
 		yearsOfDecade: [
             {
-                id: 'e',
+                id: '1988',
                 year: "1988",
                 img: require('../../../../Config/Images/History/1988.webp'),
-                text: "Inaugurada a Forjaria II com prensa Smeral de 4.000 t. "
+                text: 'institucional.historico.1988'
             },
             ]
 	},
@@ -56,22 +57,22 @@ const items = [
 		decade: "1990",
 		yearsOfDecade: [
             {
-                id: 'f',
+                id: '1991',
                 year: "1991",
                 img: require('../../../../Config/Images/History/1991.webp'),
-                text: "Iniciada a produção de peças usinadas de precisão com tornos, retíficas e geradora de engrenagens CNC"
+                text: 'institucional.historico.1991'
             },
             {
-                id: 'g',
+                id: '1995',
                 year: "1995",
                 img: require('../../../../Config/Images/History/1995.webp'),
-                text: "Iniciada a produção de braços de direção para caminhões"
+                text: 'institucional.historico.1995'
             },
             {
-                id: 'h',
+                id: '1998',
                 year: "1998",
                 img: require('../../../../Config/Images/History/1998.webp'),
-                text: "Implantada a unidade para produção de componentes do sistema de 3º Ponto de Tratores Agrícolas"
+                text: 'institucional.historico.1998'
             },
         ]   
 	},
@@ -80,52 +81,52 @@ const items = [
 		decade: "2000",
 		yearsOfDecade: [
             {
-                id: 'i',
+                id: '2001',
                 year: "2001",
                 img: require('../../../../Config/Images/History/2001.webp'),
-                text: "Empresa passa a utilizar o software Solid Edge para CAD e o Unigraphics para aplicações CAD/CAM"
+                text: 'institucional.historico.2001'
             },
             { 
-                id: 'j',
+                id: '2003',
                 year: "2003",
                 img: require('../../../../Config/Images/History/2003_1.webp'),
-                text: "Empresa lança novo produto no segmento agrícola: Gancho de engate rápido"
+                text: 'institucional.historico.2003'
             },
             {   
-                id: 'k',
+                id: '2003b',
                 year: "2003",
                 img: require('../../../../Config/Images/History/2003_2.webp'),
-                text: "High Speed Machining: Empresa investe na aquisição de nova tecnologia para matrizaria"
+                text: 'institucional.historico.2003b'
             },
             {
-                id: 'l',
+                id: '2004',
                 year: "2004",
                 img: require('../../../../Config/Images/History/2004_1.webp'),
-                text: "Implantado o Laboratório de Teste e Ensaios Mecânicos, com instalação de uma máquina de tração Kratos, capacidade 50 ton com software completo para definição das curvas força x deformação."
+                text: 'institucional.historico.2004'
             },
             {
-                id: 'm',
+                id: '2004b',
                 year: "2004",
                 img: require('../../../../Config/Images/History/2004_2.webp'),
-                text: "Maxiforja inicia operações com seu primeiro robô para soldagem. Robô KR 15/2 KUKA de seis eixos, um mesa posicionadora de dois eixos, uma fonte sinérgica de 400A, além de acessórios como o sistema automático para o corte do arame e sistema de limpeza da tocha"
+                text: 'institucional.historico.2004b'
             },
             {
-              id: 'n',
-              year: "2008",
-              img: require('../../../../Config/Images/History/2004_2.webp'),
-              text: "Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro."
-          },
-          {
-            id: 'o',
-            year: "2009",
-            img: require('../../../../Config/Images/History/2004_2.webp'),
-            text: "Também conhecidas como spindles, axle end ou extensões de carcaça, as pontas de eixo são fabricadas com tecnologia inédita na América Latina, a extrusão hidráulica a quente."
-        },
-        {
-          id: 'p',
-          year: "2009",
-          img: require('../../../../Config/Images/History/2004_2.webp'),
-          text: "Tecnologia como diferencial. A Maxiforja passará a produzir, a partir do final deste ano, um novo eixo longo para tratores. Usados em veículos com rodados traseiros duplos, as peças serão destinadas à planta de Curitiba da CNH, empresa do grupo Fiat - um dos líderes do segmento de máquinas e equipamentos agrícolas, com mais de 11 mil distribuidores em 160 países"
+                id: '2008',
+                year: "2008",
+                img: require('../../../../Config/Images/History/2004_2.webp'),
+                text: 'institucional.historico.2008'
+            },
+            {
+                id: '2009',
+                year: "2009",
+                img: require('../../../../Config/Images/History/2004_2.webp'),
+                text: 'institucional.historico.2009'
+            },
+            {
+                id: '2009b',
+                year: "2009",
+                img: require('../../../../Config/Images/History/2004_2.webp'),
+                text: 'institucional.historico.2009b'
       },
         ]
 	},
@@ -134,28 +135,28 @@ const items = [
 decade: "2010",
 yearsOfDecade: [
         {
-            id: 'q',
+            id: '2010',
             year: "2010",
             img: require('../../../../Config/Images/History/2001.webp'),
-            text: "Implantação do Lean Manufacturing, sistema criado pela empresa japonesa Toyota que ganhou espaço entre companhias do mundo inteiro"
+            text: 'institucional.historico.2010'
         },
         { 
-            id: 'r',
+            id: '2011',
             year: "2011",
             img: require('../../../../Config/Images/History/2003_1.webp'),
-            text: "MAIS DO QUE UMA CONSTRUÇÃO. Novo prédio da Usinagem da Maxiforja foi projetado a partir de um conceito mais moderno e eficaz de produção."
+            text: 'institucional.historico.2011'
         },
         {   
-            id: 's',
+            id: '2013',
             year: "2013",
             img: require('../../../../Config/Images/History/2003_2.webp'),
-            text: "Ferramentaria estreia em usinagem 5 eixos. A Maxiforja agora conta com um novo recurso de usinagem que vai per mitir mais agilidade na produção."
+            text: 'institucional.historico.2013'
         },
         {
-            id: 't',
+            id: '2014',
             year: "2014",
             img: require('../../../../Config/Images/History/2004_1.webp'),
-            text: "Desenvolvimento e à produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões. "
+            text: 'institucional.historico.2014'
         },
         
     ]
@@ -165,10 +166,10 @@ yearsOfDecade: [
 decade: "2020",
 yearsOfDecade: [
       {
-          id: 'u',
+          id: '2021',
           year: "2021",
           img: require('../../../../Config/Images/History/2004_2.webp'),
-          text: "Aquisição instação da primeira máquina de impressão 3D, o que permite a confecção interna de vários acessórios, como suportes, calibres, dispositivos. Além do ganho de agilidade de desenvolvimento para produtos próprios com a impressão prévia para análise e programas de medição."
+          text: 'institucional.historico.2021'
       },
   ]
 },
@@ -179,6 +180,7 @@ export default function NewLines() {
   const [selectedImage, setSelectedImage] = useState('')
   const [selectedText, setSelectedText] = useState('');
   const [selectedYear, setSelectedYear] = useState('')
+  const { t } = useTranslation()
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleYearClick = (yearId) => {
@@ -188,7 +190,8 @@ export default function NewLines() {
 
     if (selectedYear) {
       setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
-      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
+      
+      /*setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)*/
       setSelectedYear(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).year)
     }
   };
@@ -197,23 +200,29 @@ export default function NewLines() {
   const selectNextYear = () => {
     const currentIndex = items.findIndex(
       (decadeItem) => decadeItem.yearsOfDecade.some((yearItem) => yearItem.id === activeYear)
+    ) 
       
-    )
-     
       if (currentIndex !== -1) {
         const currentDecade = items[currentIndex]
         const yearIndex = currentDecade.yearsOfDecade.findIndex((yearItem) => yearItem.id === activeYear)
-
+        
         if (yearIndex !== -1 && yearIndex < currentDecade.yearsOfDecade.length -1) {
           const nextYearId = currentDecade.yearsOfDecade[yearIndex + 1].id
+         
           setActiveYear(nextYearId)
+          
         } else if (currentIndex < items.length -1) {
           const nextDecade = items[currentIndex + 1]
+          console.log(currentDecade)
           setActiveYear(nextDecade.yearsOfDecade[0].id)
-          console.log(yearIndex)
+          
         }
       }
   }
+
+  //Select previous year
+
+  
 
   /*Elemento do Navbar*/
   const Navbar = ({ items, activeYear, handleYearClick }) => {
@@ -264,24 +273,24 @@ return !isMobile ?
         <Col lg={6} sm={12} md={12} className='d-flex align-items-center' >
           {/*texto desktop*/}
           <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white' >
-            <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
+            <div className='contentTimeLine' style={{ position: 'absolute', bottom: '35%', left: '20%', width: '60%' }}>
               {wasClicked !== 1
-              ? <p style={{ fontSize: '2rem' }}>{selectedText}</p>
+              ? <p style={{ fontSize: '2rem' }}>{t(selectedText)}</p>
               : <p>Escolha uma década e um ano para iniciar.</p>
               }  
               {/*Arrows para troca de anos*/}
-              <MdKeyboardArrowLeft/>  
+              <MdKeyboardArrowLeft style={{ cursor: 'pointer' }}/>  
               <MdKeyboardArrowRight onClick={selectNextYear} style={{ cursor: 'pointer'}}/>            
             </div>
           </div> {/*texto tablet*/}
-          <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
+          <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine'>
             {wasClicked !== 1
             ? <p style={{ fontSize: '2rem' }}>{selectedText}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
-            <MdKeyboardArrowLeft/>  
-            <MdKeyboardArrowRight onClick={selectNextYear}/> 
+            <MdKeyboardArrowLeft style={{ cursor: 'pointer' }}/>  
+            <MdKeyboardArrowRight onClick={selectNextYear} style={{ cursor: 'pointer'}}/> 
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
@@ -294,7 +303,7 @@ return !isMobile ?
    /*is Mobile*/
    : <Container fluid>
    {/* Botoes de navegação*/}
-   <div style={{position: 'absolute', top: '0', left: '0'}}>
+   <div style={{ position: 'absolute', top: '0', left: '0' }}>
      <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
    </div>
     {/*Textura de fundo*/}
@@ -305,7 +314,7 @@ return !isMobile ?
        <Row className='h-100'>
          <Col sm={12} className='d-flex align-items-center'>
           {/*Texto selecionado*/}
-         <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break'>
+         <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine'>
             {wasClicked !== 1
             ? <p style={{ fontSize: '1.5rem' }}>{selectedText}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
