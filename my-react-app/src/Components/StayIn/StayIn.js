@@ -105,9 +105,8 @@ function StayIn() {
         </Col>
     }
 
-    return <div className="" style={{ margin: '8rem 1rem 8rem' }}>
+    return <div className="" style={{ margin: '12rem 1rem 8rem' }}>
         <Container>
-            <h2 className="title" style={{marginBottom: '4rem'}}>Fique por dentro</h2>
             <Row> {ItemsCardNews && ItemsCardNews.map((map, index) => <ItemCard {...map} key={index} />)} </Row>
         </Container>
     </div>

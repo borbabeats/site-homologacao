@@ -320,7 +320,7 @@ return !isMobile ?
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxHeight: '300px' }}/>
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '50%', maxHeight: '300px' }}/>
         </Col>
       </Row>
     </Col>
