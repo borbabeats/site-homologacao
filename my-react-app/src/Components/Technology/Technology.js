@@ -65,7 +65,7 @@ function Technology() {
 			<Col xs={2} lg={2} sm={2} className="d-none d-lg-block bg-maxi" style={{ padding: 0, paddingTop: '10rem' }}>
 				<NavSideBar ItemsNavLink={ItemsNavLinkTechnology} />
 			</Col>
-			<Col xs={12} lg={10} sm={12} className="align-items-center justify-content-center bg-maxi " style={{ height: 'auto', padding: 0, }}>
+			<Col xs={12} lg={10} sm={12} className="align-items-center justify-content-center bg-maxi " style={{ height: 'auto', padding: '60px 0', }}>
 				<Forging id={'forjaria'} />
 				<HeatTreatment id={'tratamento-termico'} />
 				<Machining_1 id={'usinagem-1'} />

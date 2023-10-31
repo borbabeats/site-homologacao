@@ -342,6 +342,21 @@ progress {
   border: #fff !important;
 }
 
+.imgSustentability {
+  width: 50%;
+  height: 100%;
+  opacity: .9;
+  border-radius: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .imgSustentability {
+    width: 100%;
+  }
+}
+
 
 
 [type=number]::-webkit-inner-spin-button,
@@ -3390,20 +3405,16 @@ input[type=submit].btn-block {
 }
 
 .contentTimeLine svg {
-  /* From https://css.glass */
-background: rgba(0, 31, 61, 0.44);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(5.1px);
-border: 1px solid rgba(0, 31, 61, 0.28);
-  fill: #fff;
-  margin-right: 22px;
-  font-size: 22px;
-  border-radius: 8px;
+background: #fff;
+border-radius: 8px;
+border: 1px solid #001f3d70;
+margin-right: 32px;
+font-size: 24px;
+fill: #001f3d;
 }
 
 .contentTimeLine svg:hover {
+  background: #ffffff99;
   fill: #f25500;
 }
 
