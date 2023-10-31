@@ -291,7 +291,7 @@ return !isMobile ?
 
     {/*Textura de fundo*/}
     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '360px' }}  />
-    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '12rem' }}>{selectedYear}</div>
+    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '9.5rem' }}>{selectedYear}</div>
     <Col lg={12} className='h-100'>
       <Row className='h-100'> 
         <Col lg={6} sm={12} md={12} className='d-flex align-items-center' >
@@ -299,17 +299,19 @@ return !isMobile ?
           <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white contentTimeLine' >
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '90%' }}>
               {wasClicked !== 1
-              ? <p style={{ fontSize: '2rem' }}>{selectedText}</p>
+              ? <p style={{ fontSize: '2rem', height: '200px' }}>{selectedText}</p>
               : <p>Escolha uma década e um ano para iniciar.</p>
               }  
               {/*Arrows para troca de anos*/}
+              <div >
               <MdKeyboardArrowLeft onClick={selectPrevYear} style={{ cursor: 'pointer' }}/>  
-              <MdKeyboardArrowRight onClick={selectNextYear} style={{ cursor: 'pointer'}}/>            
+              <MdKeyboardArrowRight onClick={selectNextYear} style={{ cursor: 'pointer'}}/>  
+              </div>          
             </div>
           </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine text-center' style={{height: '290px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '2rem' }}>{selectedText}</p>
+            ? <p style={{ fontSize: '2rem', height: '205px' }}>{selectedText}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
@@ -318,7 +320,7 @@ return !isMobile ?
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxHeight: '280px' }}/>
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxHeight: '300px' }}/>
         </Col>
       </Row>
     </Col>
@@ -333,14 +335,14 @@ return !isMobile ?
     {/*Textura de fundo*/}
     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '240px' }}  />
     {/*Ano selecionado*/}
-    <div className='div-animate-smaller ' style={{ color: '#484848', position:'absolute', top: '9%', fontSize: '9.5rem', left: '-2%' }}>{selectedYear}</div>
+    <div className='div-animate-smaller ' style={{ color: '#484848', position:'absolute', top: '9%', fontSize: '6.5rem', left: '-2%' }}>{selectedYear}</div>
      <Col sm={6} className='h-100'>
        <Row className='h-100'>
          <Col sm={12} className='d-flex align-items-center'>
           {/*Texto selecionado*/}
-         <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break text-center contentTimeLine' style={{height: '290px'}}>
+         <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break text-center contentTimeLine'>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '1.5rem' }}>{selectedText}</p>
+            ? <p style={{ fontSize: '1.5rem', height: '235px' }}>{selectedText}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
