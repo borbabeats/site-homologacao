@@ -3411,6 +3411,7 @@ border: 1px solid #001f3d70;
 margin-right: 32px;
 font-size: 24px;
 fill: #001f3d;
+transition: all .3s;
 }
 
 @media screen and (max-width: 820px) {

@@ -3,6 +3,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useState } from 'react'
 import texture from '../../../../Config/Images/History/texture-dot.svg'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
+import { useTranslation } from "react-i18next";
 
 const items = [
     {
@@ -112,19 +113,19 @@ const items = [
             {
               id: '2008',
               year: "2008",
-              img: require('../../../../Config/Images/History/2004_2.webp'),
+              img: require('../../../../Config/Images/History/2008_extrusao_quente.webp'),
               text: "Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro."
           },
           {
             id: '2009',
             year: "2009",
-            img: require('../../../../Config/Images/History/2004_2.webp'),
+            img: require('../../../../Config/Images/History/2009_extrusao_hidraulica.webp'),
             text: "Também conhecidas como spindles, axle end ou extensões de carcaça, as pontas de eixo são fabricadas com tecnologia inédita na América Latina, a extrusão hidráulica a quente."
         },
         {
           id: '2009b',
           year: "2009",
-          img: require('../../../../Config/Images/History/2004_2.webp'),
+          img: require('../../../../Config/Images/History/2009b_eixo_longo_para_tratores.webp'),
           text: "Tecnologia como diferencial. A Maxiforja passará a produzir, a partir do final deste ano, um novo eixo longo para tratores. Usados em veículos com rodados traseiros duplos, as peças serão destinadas à planta de Curitiba da CNH, empresa do grupo Fiat - um dos líderes do segmento de máquinas e equipamentos agrícolas, com mais de 11 mil distribuidores em 160 países."
       },
         ]
@@ -136,13 +137,13 @@ yearsOfDecade: [
         {
             id: '2010',
             year: "2010",
-            img: require('../../../../Config/Images/History/2001.webp'),
+            img: require('../../../../Config/Images/History/2010_lean_manufacturing.webp'),
             text: "Implantação do Lean Manufacturing, sistema criado pela empresa japonesa Toyota que ganhou espaço entre companhias do mundo inteiro."
         },
         { 
             id: '2011',
             year: "2011",
-            img: require('../../../../Config/Images/History/2003_1.webp'),
+            img: require('../../../../Config/Images/History/2011_predio_usinagem_novo.webp'),
             text: "MAIS DO QUE UMA CONSTRUÇÃO. Novo prédio da Usinagem da Maxiforja foi projetado a partir de um conceito mais moderno e eficaz de produção."
         },
         {   
@@ -154,7 +155,7 @@ yearsOfDecade: [
         {
             id: '2014',
             year: "2014",
-            img: require('../../../../Config/Images/History/2004_1.webp'),
+            img: require('../../../../Config/Images/History/2014_steering_knunckle.webp'),
             text: "Desenvolvimento e à produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões. "
         },
         
@@ -179,6 +180,7 @@ export default function NewLines() {
   const [selectedImage, setSelectedImage] = useState('')
   const [selectedText, setSelectedText] = useState('');
   const [selectedYear, setSelectedYear] = useState('')
+  const { t } = useTranslation()
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleYearClick = (yearId) => {
@@ -280,7 +282,7 @@ export default function NewLines() {
 };
 
 const wasClicked = activeYear;
-
+console.log(items.map((item) => item.yearsOfDecade.map((itemText) => itemText.text )))
 
 return !isMobile ? 
  <Container fluid className='vh-100'>
@@ -311,7 +313,7 @@ return !isMobile ?
           </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine text-center' style={{height: '230px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '2rem', height: '150px' }}>{selectedText}</p>
+            ? <p style={{ fontSize: '2rem', height: '150px' }}>{t(selectedText)}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
@@ -320,7 +322,7 @@ return !isMobile ?
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '50%', maxHeight: '300px' }}/>
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxWidth:"400px", maxHeight: '300px' }}/>
         </Col>
       </Row>
     </Col>
@@ -352,7 +354,7 @@ return !isMobile ?
          </Col>
          {/*Imagem selecionada*/}
          <Col sm={6}>
-            <Image src={selectedImage} className='d-flex d-sm-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', top: '0', right: '20%', width: '60%', maxHeight: '300px' }}/>
+            <Image src={selectedImage} className='d-flex d-sm-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', top: '0', right: '20%', width: '60%', maxHeight: '250px' }}/>
         </Col>
        </Row>
      </Col>

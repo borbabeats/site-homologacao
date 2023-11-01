@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sustainability from "../src/Components/Sustainability/Sustainability";
 import Institucional from "../src/Components/Institutional/Institutional";
 import Technology from "../src/Components/Technology/Technology";
@@ -7,6 +7,7 @@ import HomePage from "../src/Components/HomePage/HomePage";
 import Contact from "../src/Components/Contact/Contact";
 import StayIn from "../src/Components/StayIn/StayIn";
 import Acting from "../src/Components/Acting/Products";
+import Page404 from "../src/Components/Page404"
 import Footer from "../src/Components/Footer/Footer";
 import "../src/Config/i18n";
 import "./index.css";
@@ -25,7 +26,7 @@ function App() {
           <Route path="/sustentabilidade" element={<Sustainability />} />
           <Route path="/fique-por-dentro" element={<StayIn />} />
           <Route path="/contato" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>
