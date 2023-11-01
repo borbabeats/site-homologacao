@@ -8,7 +8,7 @@ function Page404() {
                 
                 <h1 className='text-center align-self-center' style={{ fontSize: '6rem', fontWeight: 'bold' }}>404 ERROR</h1>
                 <p className='text-center'>Desculpe, essa página não foi encontrada.</p>
-                <Button className='btn-round btn-maxi-color align-self-center btn btn-secondary' style={{maxWidth: '315px'}} href='/'>Voltar para o início</Button>
+                <Button className='btn-round align-self-center  btn btn-pageNoFound' style={{maxWidth: '315px'}} href='/'>Voltar para o início</Button>
                 
             </Col>
         </Container>

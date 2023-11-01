@@ -156,7 +156,7 @@ yearsOfDecade: [
             id: '2014',
             year: "2014",
             img: require('../../../../Config/Images/History/2014_steering_knunckle.webp'),
-            text: "Desenvolvimento e à produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões. "
+            text: "Desenvolvimento e à produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões."
         },
         
     ]
@@ -285,7 +285,7 @@ const wasClicked = activeYear;
 console.log(items.map((item) => item.yearsOfDecade.map((itemText) => itemText.text )))
 
 return !isMobile ? 
- <Container fluid className='vh-100'>
+ <Container className='vh-100'>
     {/* Botoes de navegação*/}
     <div>
       <Navbar items={items} activeYear={activeYear} handleYearClick={handleYearClick} />
@@ -322,7 +322,7 @@ return !isMobile ?
           </div>
         </Col>
         <Col lg={6} sm={12} md={12}>
-            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '20%', width: '60%', maxWidth:"400px", maxHeight: '300px' }}/>
+            <Image src={selectedImage} className='d-none d-md-block div-animate-img mr-auto ml-auto imgHistoric' style={{ position: 'absolute', bottom: '40%', right: '0%', width: '100%', maxWidth:"400px", maxHeight: '300px' }}/>
         </Col>
       </Row>
     </Col>

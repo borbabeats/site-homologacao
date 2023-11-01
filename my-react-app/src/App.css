@@ -351,10 +351,23 @@ progress {
   background-color: rgba(0, 0, 0, 0);
 }
 
+
+
 @media screen and (max-width: 768px) {
   .imgSustentability {
     width: 100%;
   }
+}
+
+.btn-pageNoFound {
+  background-color: #001f3d !important;
+  border: 2px solid #001f3d;
+  outline: none;
+  color: #fff;
+}
+
+.btn-pageNoFound:hover {
+  color: #f25500;
 }
 
 
@@ -14984,6 +14997,7 @@ select::-moz-focus-inner {
   .imgHistoric {
     max-height: 90% !important;
     width: 40%;
+    right: 20% !important;
   }
 }
 
@@ -18386,6 +18400,13 @@ ul {
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+
+@media screen and (min-width: 1450px) {
+  .div-animate-smaller {
+    left: 25% !important;
+  }  
+}
+
 
 
 @keyframes entrada-reverse {
