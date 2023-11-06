@@ -41,7 +41,7 @@ const items = [
 		decade: "1980",
 		yearsOfDecade: [
             {
-                id: '1980',
+                id: '1988',
                 year: "1988",
                 img: require('../../../../Config/Images/History/1988.webp'),
             },
@@ -159,6 +159,7 @@ function NewLines() {
   const [selectedImage, setSelectedImage] = useState('')
   const [selectedText, setSelectedText] = useState('');
   const [selectedYear, setSelectedYear] = useState('')
+  const [selectedId, setSelectedId] = useState('')
   const { t } = useTranslation()
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -169,8 +170,9 @@ function NewLines() {
 
     if (selectedYear) {
       setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
-      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)                                                           //setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
+      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
       setSelectedYear(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).year)
+      setSelectedId(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).id)
     }
   };
 
@@ -190,6 +192,7 @@ function NewLines() {
         setSelectedImage(nextYear.img);
         setSelectedText(nextYear.text);
         setSelectedYear(nextYear.year);
+        setSelectedId(nextYear.id);
       } else if (currentIndex < items.length - 1) {
         const nextDecade = items[currentIndex + 1];
         setActiveYear(nextDecade.yearsOfDecade[0].id);
@@ -197,6 +200,7 @@ function NewLines() {
         setSelectedImage(nextYear.img);
         setSelectedText(nextYear.text);
         setSelectedYear(nextYear.year);
+        setSelectedId(nextYear.id)
       }
     }
   }
@@ -217,14 +221,15 @@ function NewLines() {
         setSelectedImage(prevYear.img);
         setSelectedText(prevYear.text);
         setSelectedYear(prevYear.year);
+        setSelectedId(prevYear.id)
       } else if (currentIndex > 0) {
         const prevDecade = items[currentIndex - 1];
         const prevYear = prevDecade.yearsOfDecade[prevDecade.yearsOfDecade.length - 1];
         setActiveYear(prevYear.id);
-        
         setSelectedImage(prevYear.img);
         setSelectedText(prevYear.text);
         setSelectedYear(prevYear.year);
+        setSelectedId(prevYear.id)
       }
     }
   }
@@ -261,7 +266,7 @@ function NewLines() {
 };
 
 const wasClicked = activeYear;
-console.log(currentIndex)
+console.log(selectedId)
 
 return !isMobile ? 
  <Container className='vh-100'>
@@ -280,7 +285,7 @@ return !isMobile ?
           <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white contentTimeLine' >
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '90%' }}>
               {wasClicked !== 1
-              ? <p style={{ fontSize: '2rem', height: '200px' }}>{t('institucional.historico.texto.0.'+ selectedYear)}</p>
+              ? <p style={{ fontSize: '2rem', height: '200px' }}>{t('institucional.historico.texto.0.'+ selectedId)}</p>
               : <p>Escolha uma década e um ano para iniciar.</p> 
               }  
               {/*Arrows para troca de anos*/}
@@ -292,7 +297,7 @@ return !isMobile ?
           </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine text-center' style={{height: '230px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '2rem', height: '150px' }}>{t('institucional.historico.texto.0.'+selectedYear)}</p>
+            ? <p style={{ fontSize: '2rem', height: '150px' }}>{t('institucional.historico.texto.0.'+selectedId)}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
@@ -323,7 +328,7 @@ return !isMobile ?
           {/*Texto selecionado*/}
          <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break text-center contentTimeLine' style={{height: '290px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '1.5rem', height: '205px' }}>{t('institucional.historico.texto.0.'+selectedYear)}</p>
+            ? <p style={{ fontSize: '1.5rem', height: '205px' }}>{t('institucional.historico.texto.0.'+selectedId)}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
