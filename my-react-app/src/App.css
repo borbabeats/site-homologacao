@@ -13999,6 +13999,13 @@ select::-moz-focus-inner {
   align-self: center
 }
 
+@media screen and (max-width: 992px) {
+.navbar .navbar-nav .nav-item .nav-link div {
+  left: 6% !important;
+}
+
+}
+
 @media screen and (min-width: 1024px) {
   .nav-item {
     align-self: center
