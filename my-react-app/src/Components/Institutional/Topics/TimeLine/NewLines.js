@@ -13,12 +13,10 @@ const items = [
 				{     id: '1963',
 				      year: "1963",
         			img: require('../../../../Config/Images/Home/firstPhoto.webp'),
-        			text: "Constituição da CIME - Companhia Industrial de Materiais Elétricos com a finalidade de produzir eletroferragem galvanizada para rede de energia elétrica."
                 },
 				{     id: '1968',
         			year: "1968",
         			img: require('../../../../Config/Images/History/1968.webp'),
-        			text: "Início da gestão da Família Veit."
                 }		
 			]
 	},
@@ -30,13 +28,11 @@ const items = [
             id: '1973',
 				    year: "1973",
 				    img: require('../../../../Config/Images/History/1973.webp'),
-        		text: "A empresa se transfere para o atual endereço, em terreno de 26000m² e área construída de 1600m². Inaugurada a Forjaria I, com Martelo Banning de 25kj."
                 },
 				{
               id: '1975',
         			year: "1975",
         			img: require('../../../../Config/Images/History/1975.webp'),
-        			text: "Entra em operação Martelo Banning de 50 kj."
                 }
             ]
 	},
@@ -48,7 +44,6 @@ const items = [
                 id: '1980',
                 year: "1988",
                 img: require('../../../../Config/Images/History/1988.webp'),
-                text: "Inaugurada a Forjaria II com prensa Smeral de 4.000 t."
             },
             ]
 	},
@@ -60,19 +55,16 @@ const items = [
                 id: '1991',
                 year: "1991",
                 img: require('../../../../Config/Images/History/1991.webp'),
-                text: "Iniciada a produção de peças usinadas de precisão com tornos, retíficas e geradora de engrenagens CNC."
             },
             {
                 id: '1995',
                 year: "1995",
                 img: require('../../../../Config/Images/History/1995.webp'),
-                text: "Iniciada a produção de braços de direção para caminhões."
             },
             {
                 id: '1998',
                 year: "1998",
                 img: require('../../../../Config/Images/History/1998.webp'),
-                text: "Implantada a unidade para produção de componentes do sistema de 3º Ponto de Tratores Agrícolas."
             },
         ]   
 	},
@@ -84,49 +76,41 @@ const items = [
                 id: '2001',
                 year: "2001",
                 img: require('../../../../Config/Images/History/2001.webp'),
-                text: "Empresa passa a utilizar o software Solid Edge para CAD e o Unigraphics para aplicações CAD/CAM."
             },
             { 
                 id: '2003',
                 year: "2003",
                 img: require('../../../../Config/Images/History/2003_1.webp'),
-                text: "Empresa lança novo produto no segmento agrícola: Gancho de engate rápido."
             },
             {   
                 id: '2003b',
                 year: "2003",
                 img: require('../../../../Config/Images/History/2003_2.webp'),
-                text: "High Speed Machining: Empresa investe na aquisição de nova tecnologia para matrizaria."
             },
             {
                 id: '2004',
                 year: "2004",
                 img: require('../../../../Config/Images/History/2004_1.webp'),
-                text: "Implantado o Laboratório de Teste e Ensaios Mecânicos, com instalação de uma máquina de tração Kratos, capacidade 50 ton com software completo para definição das curvas força x deformação."
             },
             {
                 id: '2004b',
                 year: "2004",
                 img: require('../../../../Config/Images/History/2004_2.webp'),
-                text: "Maxiforja inicia operações com seu primeiro robô para soldagem. Robô KR 15/2 KUKA de seis eixos, um mesa posicionadora de dois eixos, uma fonte sinérgica de 400A, além de acessórios como o sistema automático para o corte do arame e sistema de limpeza da tocha."
             },
             {
               id: '2008',
               year: "2008",
               img: require('../../../../Config/Images/History/2008_extrusao_quente.webp'),
-              text: "Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro."
           },
           {
             id: '2009',
             year: "2009",
             img: require('../../../../Config/Images/History/2009_extrusao_hidraulica.webp'),
-            text: "Também conhecidas como spindles, axle end ou extensões de carcaça, as pontas de eixo são fabricadas com tecnologia inédita na América Latina, a extrusão hidráulica a quente."
         },
         {
           id: '2009b',
           year: "2009",
           img: require('../../../../Config/Images/History/2009b_eixo_longo_para_tratores.webp'),
-          text: "Tecnologia como diferencial. A Maxiforja passará a produzir, a partir do final deste ano, um novo eixo longo para tratores. Usados em veículos com rodados traseiros duplos, as peças serão destinadas à planta de Curitiba da CNH, empresa do grupo Fiat - um dos líderes do segmento de máquinas e equipamentos agrícolas, com mais de 11 mil distribuidores em 160 países."
       },
         ]
 	},
@@ -138,25 +122,21 @@ yearsOfDecade: [
             id: '2010',
             year: "2010",
             img: require('../../../../Config/Images/History/2010_lean_manufacturing.webp'),
-            text: "Implantação do Lean Manufacturing, sistema criado pela empresa japonesa Toyota que ganhou espaço entre companhias do mundo inteiro."
         },
         { 
             id: '2011',
             year: "2011",
             img: require('../../../../Config/Images/History/2011_predio_usinagem_novo.webp'),
-            text: "MAIS DO QUE UMA CONSTRUÇÃO. Novo prédio da Usinagem da Maxiforja foi projetado a partir de um conceito mais moderno e eficaz de produção."
         },
         {   
             id: '2013',
             year: "2013",
             img: require('../../../../Config/Images/History/2003_2.webp'),
-            text: "Ferramentaria estreia em usinagem 5 eixos. A Maxiforja agora conta com um novo recurso de usinagem que vai per mitir mais agilidade na produção."
         },
         {
             id: '2014',
             year: "2014",
             img: require('../../../../Config/Images/History/2014_steering_knunckle.webp'),
-            text: "Desenvolvimento e à produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões."
         },
         
     ]
@@ -169,13 +149,12 @@ yearsOfDecade: [
           id: '2021',
           year: "2021",
           img: require('../../../../Config/Images/History/2004_2.webp'),
-          text: "Aquisição instação da primeira máquina de impressão 3D, o que permite a confecção interna de vários acessórios, como suportes, calibres, dispositivos. Além do ganho de agilidade de desenvolvimento para produtos próprios com a impressão prévia para análise e programas de medição."
       },
   ]
 },
 ];
 
-export default function NewLines() {
+function NewLines() {
   const [activeYear, setActiveYear] = useState(items[0].id);
   const [selectedImage, setSelectedImage] = useState('')
   const [selectedText, setSelectedText] = useState('');
@@ -190,7 +169,7 @@ export default function NewLines() {
 
     if (selectedYear) {
       setSelectedImage(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).img)
-      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
+      setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)                                                           //setSelectedText(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).text)
       setSelectedYear(selectedYear.yearsOfDecade.find((yearItem) => yearItem.id === yearId).year)
     }
   };
@@ -282,7 +261,7 @@ export default function NewLines() {
 };
 
 const wasClicked = activeYear;
-console.log(items.map((item) => item.yearsOfDecade.map((itemText) => itemText.text )))
+console.log(currentIndex)
 
 return !isMobile ? 
  <Container className='vh-100'>
@@ -301,8 +280,8 @@ return !isMobile ?
           <div className='p-4 d-none d-lg-block mr-auto ml-auto div-animate-text fade-in text-break text-white contentTimeLine' >
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '90%' }}>
               {wasClicked !== 1
-              ? <p style={{ fontSize: '2rem', height: '200px' }}>{selectedText}</p>
-              : <p>Escolha uma década e um ano para iniciar.</p>
+              ? <p style={{ fontSize: '2rem', height: '200px' }}>{t('institucional.historico.texto.0.'+ selectedYear)}</p>
+              : <p>Escolha uma década e um ano para iniciar.</p> 
               }  
               {/*Arrows para troca de anos*/}
               <div >
@@ -313,7 +292,7 @@ return !isMobile ?
           </div> {/*texto tablet*/}
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine text-center' style={{height: '230px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '2rem', height: '150px' }}>{t(selectedText)}</p>
+            ? <p style={{ fontSize: '2rem', height: '150px' }}>{t('institucional.historico.texto.0.'+selectedYear)}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
@@ -344,7 +323,7 @@ return !isMobile ?
           {/*Texto selecionado*/}
          <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break text-center contentTimeLine' style={{height: '290px'}}>
             {wasClicked !== 1
-            ? <p style={{ fontSize: '1.5rem', height: '205px' }}>{selectedText}</p>
+            ? <p style={{ fontSize: '1.5rem', height: '205px' }}>{t('institucional.historico.texto.0.'+selectedYear)}</p>
             : <p>Escolha uma década e um ano para iniciar.</p>
             }
             {/*Arrows para troca de anos*/}
@@ -361,3 +340,5 @@ return !isMobile ?
  </Container>
 
 }
+
+export default NewLines
