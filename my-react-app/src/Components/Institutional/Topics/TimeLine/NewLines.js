@@ -266,7 +266,6 @@ function NewLines() {
 };
 
 const wasClicked = activeYear;
-console.log(selectedId)
 
 return !isMobile ? 
  <Container className='vh-100'>
@@ -286,7 +285,7 @@ return !isMobile ?
             <div style={{ position: 'absolute', bottom: '35%', left: '20%', width: '90%' }}>
               {wasClicked !== 1
               ? <p style={{ fontSize: '2rem', height: '200px' }}>{t('institucional.historico.texto.0.'+ selectedId)}</p>
-              : <p>Escolha uma década e um ano para iniciar.</p> 
+              : <p>{t('institucional.historico.texto.0.continue')}</p> 
               }  
               {/*Arrows para troca de anos*/}
               <div >
@@ -298,7 +297,7 @@ return !isMobile ?
           <div className='p-5 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break contentTimeLine text-center' style={{height: '230px'}}>
             {wasClicked !== 1
             ? <p style={{ fontSize: '2rem', height: '150px' }}>{t('institucional.historico.texto.0.'+selectedId)}</p>
-            : <p>Escolha uma década e um ano para iniciar.</p>
+            : <p>{t('institucional.historico.texto.0.continue')}</p>
             }
             {/*Arrows para troca de anos*/}
             <MdKeyboardArrowLeft onClick={selectPrevYear} style={{ cursor: 'pointer'}}/>  
@@ -329,7 +328,7 @@ return !isMobile ?
          <div className='p-3 text-white d-lg-none d-sm-block mr-auto ml-auto div-animate-text fade-in text-break text-center contentTimeLine' style={{height: '290px'}}>
             {wasClicked !== 1
             ? <p style={{ fontSize: '1.5rem', height: '205px' }}>{t('institucional.historico.texto.0.'+selectedId)}</p>
-            : <p>Escolha uma década e um ano para iniciar.</p>
+            : <p>{t('institucional.historico.texto.0.continue')}</p>
             }
             {/*Arrows para troca de anos*/}
             <MdKeyboardArrowLeft onClick={selectPrevYear} style={{ cursor: 'pointer' }}/>  

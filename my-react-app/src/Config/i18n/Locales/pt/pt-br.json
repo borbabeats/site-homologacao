@@ -114,6 +114,7 @@
                 "titulo": "Histórico",
                 "texto": [
                     {
+                        "continue": "Escolha uma década e um ano para iniciar.",
                        "1963": "Constituição da CIME - Companhia Industrial de Materiais Elétricos com a finalidade de produzir eletroferragem galvanizada para rede de energia elétrica.",
                        "1968": "Início da gestão da Família Veit.",
                        "1973": "A empresa se transfere para o atual endereço, em terreno de 26000m² e área construída de 1600m². Inaugurada a Forjaria I, com Martelo Banning de 25kj.",

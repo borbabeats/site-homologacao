@@ -110,6 +110,7 @@
                 "titulo": "Historic",
                 "texto": [
                     {
+                        "continue":"Choose a decade and a year to start the presentation.",
                         "1963": "Incorporation of CIME - Companhia Industrial de Materiais Elétricos with the aim of producing galvanized electrical wire for the electricity grid.",
                         "1968": "Beginning of the Veit family management.",
                         "1973": "The company moves to its current location on a 26,000m² site with a 1600m² building area. Forge I is inaugurated, with a 25kj Banning Hammer.",
