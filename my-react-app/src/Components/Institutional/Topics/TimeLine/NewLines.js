@@ -131,7 +131,7 @@ yearsOfDecade: [
         {   
             id: '2013',
             year: "2013",
-            img: require('../../../../Config/Images/History/2003_2.webp'),
+            img: require('../../../../Config/Images/History/2013_usinagem_5_eixos.webp'),
         },
         {
             id: '2014',
@@ -148,7 +148,7 @@ yearsOfDecade: [
       {
           id: '2021',
           year: "2021",
-          img: require('../../../../Config/Images/History/2004_2.webp'),
+          img: require('../../../../Config/Images/History/2021_impressora_3d.webp'),
       },
   ]
 },
@@ -276,7 +276,8 @@ return !isMobile ?
 
     {/*Textura de fundo*/}
     <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '360px' }}  />
-    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '4%', fontSize: '9.5rem' }}>{selectedYear}</div>
+    {/*Ano do evento*/}
+    <div className='div-animate-smaller' style={{ color: '#484848', position:'absolute', top: '9%', left: '1%', fontSize: '9.5rem' }}>{selectedYear}</div>
     <Col lg={12} className='h-100'>
       <Row className='h-100'> 
         <Col lg={6} sm={12} md={12} className='d-flex align-items-center' >
