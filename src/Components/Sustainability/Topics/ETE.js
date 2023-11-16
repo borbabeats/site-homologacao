@@ -1,5 +1,6 @@
 import photo from '../../../Config/Images/Fotos Maxiatualidades/ete.webp'
 import photo2 from '../../../Config/Images/Fotos Maxiatualidades/tunel-verde.webp'
+import photo3 from '../../../Config/Images/Fotos Maxiatualidades/ETE3.webp'
 import { Col, Container, Fade, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
@@ -28,7 +29,7 @@ function ETE({ id }) {
 						<div className='d-flex text-start'>
 							<Fade>
 								<img className='imgSustentability' src={photo} alt="ETE" />
-								
+								<img className='imgSustentability' src={photo3} alt="ETE entrada"/>
 							</Fade>
 						</div>
 					</Col>
