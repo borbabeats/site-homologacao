@@ -5,10 +5,15 @@ import { useTranslation } from "react-i18next";
 import Containers from "../../Component/Containers";
 
 const itemsManualCodesGuides = [
-    /*{
+    {
         name: 'institucional.manuais.arquivos.codigo-etica',
         link: require('../../../Config/PDF/Código de Ética.pdf'),
-},*/ /*{
+}, 
+    {
+        name: 'institucional.manuais.arquivos.manual-fornecedores',
+        link: require('../../../Config/PDF/MFM001_22_Manual_de_Fornecedores.pdf'),
+    },
+/*{
         name: 'institucional.manuais.arquivos.guia-ambiental',
         link: require('../../../Config/PDF/Guia de Gestão Ambiental.pdf'),
 },*/ {

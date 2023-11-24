@@ -2,7 +2,7 @@ import img1963 from '../../../Config/Icons/LineHistory/eletrico.svg'
 import img1971 from '../../../Config/Icons/LineHistory/trator.svg'
 import img1988 from '../../../Config/Icons/LineHistory/Prensa.svg'
 import img1995 from '../../../Config/Icons/LineHistory/caminhao.svg'
-import img2008 from '../../../Config/Icons/LineHistory/extrusão.svg'
+import img2008 from '../../../Config/Icons/LineHistory/extrusão.png'
 import img2010 from '../../../Config/Icons/LineHistory/Usinagem.svg'
 import FotosAereaHome from '../../../Config/Images/Home/FotosAereaHome.webp'
 import imageFirst from '../../../Config/Images/Home/firstPhoto.webp'
@@ -47,7 +47,7 @@ function PageHome() {
             classNameIcon: '',
             textForTitle: '2008',
             textForApresentation: 'home.marco5',
-            img: null/*img2008*/
+            img: img2008
 
         }, {
             id: 6,
@@ -94,7 +94,7 @@ function PageHome() {
             </Row>
             <Fade className="mt-3" tag="div" >
                 <Col className="ml-auto mr-auto text-center " md="15" lg="15" sm="15">
-                    <Link to="/institucional#historico">
+                    <Link to="/institucional#historico" href={"/institucional#historico"}>
                         <Button className="btn-round btn-maxi-color "> {t('geral.saiba-mais')} </Button>
                     </Link>
                 </Col>

@@ -125,8 +125,8 @@ export default function EquipmentConstructionTracking({ id, retro }) {
     }, [])
 
     return <div style={{ padding: (isDesktop ? '5rem 0 2rem 0' : '5rem 15px 2rem 15px') }} className={`bg-white`} id={id}>
-        {retro && <Container>
-            <div ref={divImageAuto} className='row mt-3'>
+        {retro && <Container >
+            <div ref={divImageAuto} className='row mt-3' style={{maxWidth: '798px'}}>
                 <h2 className="title mt-5">{t('atuacao.MEC.titulo')}</h2>
                 <Col className="" md="15" lg="15" sm="15" >
                     <div className='' style={{ position: 'relative' }}>

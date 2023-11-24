@@ -34,7 +34,7 @@ function Acting() {
             <Col xs={2} lg={2} sm={2} className="d-none d-lg-block bg-maxi" style={{ padding: 0, paddingTop: '10rem' }}>
                 <NavSideBar ItemsNavLink={ItemsNavLinkActing} />
             </Col>
-            <Col xs={12} lg={10} sm={12} className="align-items-center justify-content-center bg-maxi " style={{ height: 'auto', padding: 0, }}>
+            <Col xs={12} lg={10} sm={12} className="align-items-center justify-content-center bg-maxi " style={{ height: 'auto', padding: 0 }}>
                 <AutomotiveTracking id={'automotivo'} ImgSegAuto={ImgSegAuto} />
                 <AgriculturalFollowup id={'agricola'} ImgSegAgri={ImgSegAgri} />
                 <EquipmentConstructionTracking id={'maquina-equipamentos-construcao'} retro={retro} />
