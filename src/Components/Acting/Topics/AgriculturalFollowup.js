@@ -201,7 +201,7 @@ export default function AgriculturalFollowup({ id, ImgSegAgri }) {
 
     return <div style={{ padding: (isDesktop ? '5rem 0 2rem 0' : '5rem 15px 2rem 15px') }} className={`bg-white`} id={id}>
         {ImgSegAgri && <Container >
-            <div ref={divImageAgri} className='row'>
+            <div ref={divImageAgri} className='row' style={{maxWidth: '798px'}}>
                 <Fade className="mt-3" baseClassActive={'show'} >
                     <Col md="15" lg="15" sm="15" >
                         <h2 className="title mt-5">{t('atuacao.agricola.titulo')}</h2>
