@@ -9,7 +9,7 @@ function Historic({ id }) {
     const isDesktop = useMediaQuery({ minWidth: 992 });
 
     return <Containers
-        style={{ padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px') }}
+        style={{ padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px'), margin: "150px auto" }}
         texto={'institucional.historico.texto'}
         h2={'institucional.historico.titulo'}
         colorTitle={'text-white'}
