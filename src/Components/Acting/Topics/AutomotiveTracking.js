@@ -353,7 +353,7 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
             <div ref={divImageAuto} className='row mt-3' style={{maxWidth: '798px'}}>
                 <Col className="" md="15" lg="15" sm="15" >
                     <h2 className="title mt-5" >{t('atuacao.automotivo.titulo')}</h2>
-                    <div className='' style={{ position: 'relative' }}>
+                    <div className='img-product automotive'>
                         {isVisible && <ToolTip onMouseEnterDiv={onMouseEnterDiv} onMouseLeaveDiv={onMouseLeaveDiv} divPosition={divPosition} infoPiece={infoPiece} />}
                         <ImageMapper src={ImgSegAuto} map={mapSegAutomotivo} width={imageWidth} imgWidth={1148} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
                     </div>
