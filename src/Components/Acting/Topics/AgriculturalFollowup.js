@@ -205,7 +205,7 @@ export default function AgriculturalFollowup({ id, ImgSegAgri }) {
                 <Fade className="mt-3" baseClassActive={'show'} >
                     <Col md="15" lg="15" sm="15" >
                         <h2 className="title mt-5">{t('atuacao.agricola.titulo')}</h2>
-                        <div className='' style={{ position: 'relative' }}>
+                        <div className='img-product agricultural'>
                             {isVisible && <ToolTip onMouseEnterDiv={onMouseEnterDiv} onMouseLeaveDiv={onMouseLeaveDiv} divPosition={divPosition} infoPiece={infoPiece} />}
                             <ImageMapper src={ImgSegAgri} map={mapSegAgri} width={imageWidth} imgWidth={1007} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
                         </div>

@@ -15,9 +15,11 @@ function ETE({ id }) {
 		<Container>
 			<Row className='mt-3'>
 				<Fade className="mt-3" baseClassActive={'show'} >
-					<Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
-						<h2 className="title mt-3 color-maxi-invert" style={{ fontWeight: '' }}>{t('sustentabilidade.ete.titulo')}</h2>
+					<Col className="ml-auto mr-auto" md="12" lg="12" sm="12">
+						
+						<h2 className="title mt-3" style={{ fontWeight: '400' }}>{t('sustentabilidade.ete.titulo')}</h2>
 						<img className='imgSustentability' src={photo2} alt="Árvores da Entrada"/>
+						
 						{t('sustentabilidade.ete.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
 							{titulo && <h2 className='title' >{titulo}</h2> }
 							{subtitulo && <h3 className='color-maxi'> {subtitulo}  </h3>}
@@ -25,6 +27,7 @@ function ETE({ id }) {
 							{texto && texto.map((text, index) => <p className="description mt-3 text-black" key={index}> {text} </p>)}
 							
 						</div>)}
+						
 
 						<div className='d-flex text-start'>
 							<Fade>

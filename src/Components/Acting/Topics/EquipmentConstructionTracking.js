@@ -129,7 +129,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
             <div ref={divImageAuto} className='row mt-3' style={{maxWidth: '798px'}}>
                 <h2 className="title mt-5">{t('atuacao.MEC.titulo')}</h2>
                 <Col className="" md="15" lg="15" sm="15" >
-                    <div className='' style={{ position: 'relative' }}>
+                    <div className='img-product equipmentConstrution' >
                         {isVisible && <ToolTip onMouseEnterDiv={onMouseEnterDiv} onMouseLeaveDiv={onMouseLeaveDiv} divPosition={divPosition} infoPiece={infoPiece} />}
                         <ImageMapper src={retro} map={mapRetro} width={imageWidth} imgWidth={1280} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
                     </div>

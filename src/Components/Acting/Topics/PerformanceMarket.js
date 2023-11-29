@@ -8,7 +8,7 @@ function PerformanceMarket({ id }) {
     const { t } = useTranslation()
     const isDesktop = useMediaQuery({ minWidth: 992 });
 
-    return <div style={{ padding: (isDesktop ? '5rem 0 2rem 0' : '5rem 15px 2rem 15px'), borderEndStartRadius : 20 }} className={`bg-white`} id={id}>
+    return <div style={{ padding: (isDesktop ? '5rem 0 2rem 0' : '5rem 15px 2rem 15px'), borderEndStartRadius : 20 }} className={`bg-pearl border-top`} id={id}>
         <Container >
             <Row>
                 <Fade baseClassActive={'show'} >

@@ -94,7 +94,7 @@ function PageHome() {
             </Row>
             <Fade className="mt-3" tag="div" >
                 <Col className="ml-auto mr-auto text-center " md="15" lg="15" sm="15">
-                    <Link to="/institucional#historico" href={"/institucional#historico"}>
+                    <Link to="/institucional#generalPresentation" href={"/institucional#historico"}>
                         <Button className="btn-round btn-maxi-color "> {t('geral.saiba-mais')} </Button>
                     </Link>
                 </Col>

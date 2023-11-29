@@ -8,10 +8,10 @@ function HeatTreatment({ id }) {
     const { t } = useTranslation()
 
 
-    return <div style={{ padding: (isDesktop ? '1rem 0 2rem 0' : '0 15px 2rem 15px') }} className={`bg-white`} id={id}>
+    return <div style={{ padding: (isDesktop ? '1rem 0 2rem 0' : '0 15px 2rem 15px') }} className={`bg-pearl`} id={id}>
         <Container>
-            <Row className='mt-3'>
-                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
+            <Row className='mt-3 '>
+                <Col className="ml-auto mr-auto" md="12" lg="6" sm="12">
                     {t('tecnologia.tratamento-termico.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, itens }, index) => <div key={index}>
                         {titulo && <h2 className='title' >{titulo}</h2>}
                         {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
@@ -21,6 +21,9 @@ function HeatTreatment({ id }) {
                             {item.textos.map(text => <p className='px-4'>{text}</p>)}
                         </> )}
                     </div>)}
+                </Col>
+                <Col md='12' lg='6' sm='12'>
+                
                 </Col>
             </Row>
         </Container>
