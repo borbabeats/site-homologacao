@@ -126,7 +126,7 @@ export default function Lines() {
             const currentIndex = items.findIndex((item) => item.id === activeYear)
             const nextIndex = (currentIndex + 1) % items.length
             setActiveYear(items[nextIndex].id)
-        }, 5000)
+        }, 50000)
 
         return () => clearInterval(intervalIdRef.current)
     })

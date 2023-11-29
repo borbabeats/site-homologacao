@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { useTranslation } from "react-i18next"
 import { useMediaQuery } from 'react-responsive';
+import photo from '../../../Config/Images/Tecnologia/2023_081.webp'
 
 function Forging({ id }) {
     const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -22,13 +23,10 @@ function Forging({ id }) {
                         </> )}
                     </div>)}
                 </Col>
-                <Col className='ml-auto d-inline-flex-end bg-danger' md='6' lg='7' sm='12'>
-                <img src="..." alt="..." width={'100%'} />
+                <Col className='ml-auto d-inline-flex-end ' md='6' lg='7' sm='12'>
+                <img className='mt-4' src={photo} alt="..." width={'100%'} />
             </Col>
             </Row>
-            
-            
-        
         </Container>
     </div>;
 }

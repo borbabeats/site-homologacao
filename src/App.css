@@ -364,6 +364,16 @@ progress {
   }
 }
 
+.slick-arrow {
+  position: absolute;
+  border-radius: 25%;
+  width: 32px;
+}
+
+.slick-next {
+  left: 95%;
+}
+
 
 
 @media screen and (max-width: 768px) {

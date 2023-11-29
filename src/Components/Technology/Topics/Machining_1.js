@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { useTranslation } from "react-i18next"
 import { useMediaQuery } from 'react-responsive';
+import photo2 from '../../../Config/Images/Tecnologia/2023_198.webp'
 
 function Machining_1({ id }) {
     const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -11,8 +12,8 @@ function Machining_1({ id }) {
     return <div style={{ padding: (isDesktop ? '1rem 0 2rem 0' : '0 15px 2rem 15px') }} className={`bg-white`} id={id}>
         <Container>
             <Row className='mt-3'>
-            <Col className='bg-danger' md='12' lg='7' sm='12'>
-            <img src="..." alt="..." width={'100%'} />
+            <Col className='' md='12' lg='7' sm='12'>
+            <img className='mt-4' src={photo2} alt="..." width={'100%'} />
                 </Col>
                 <Col className="ml-auto mr-auto" md="12" lg="5" sm="12">
                     {t('tecnologia.usinagem-1.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, itens }, index) => <div key={index}>

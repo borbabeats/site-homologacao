@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { useTranslation } from "react-i18next"
 import { useMediaQuery } from 'react-responsive';
+import photo3 from '../../../Config/Images/Tecnologia/2023_162.webp'
 
 function MechanicalLaboratory({ id }) {
     const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -22,8 +23,8 @@ function MechanicalLaboratory({ id }) {
                         </> )}
                     </div>)}
                 </Col>
-                <Col className='bg-danger' md='12' lg='7' sm='12'>
-                <img src="..." alt="..." width={'100%'} />
+                <Col className='' md='12' lg='7' sm='12'>
+                <img className='mt-4' src={photo3} alt="..." width={'100%'} />
                 </Col>
             </Row>
         </Container>
