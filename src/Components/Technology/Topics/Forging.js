@@ -8,10 +8,10 @@ function Forging({ id }) {
     const { t } = useTranslation()
 
 
-    return <div style={{ padding: (isDesktop ? '5rem 0 0 0' : '5rem 15px 2rem 15px') }} className={`bg-white`} id={id}>
+    return <div style={{ padding: (isDesktop ? '5rem 0 0 0' : '5rem 15px 2rem 15px') }} className={`bg-pearl`} id={id}>
         <Container>
             <Row className='mt-3'>
-                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
+                <Col className="ml-auto mr-auto" md="12" lg="5" sm="12">
                     {t('tecnologia.forjaria.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, itens }, index) => <div key={index}>
                         {titulo && <h2 className='title' >{titulo}</h2>}
                         {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
@@ -22,7 +22,13 @@ function Forging({ id }) {
                         </> )}
                     </div>)}
                 </Col>
+                <Col className='ml-auto d-inline-flex-end bg-danger' md='6' lg='7' sm='12'>
+                <img src="..." alt="..." width={'100%'} />
+            </Col>
             </Row>
+            
+            
+        
         </Container>
     </div>;
 }
