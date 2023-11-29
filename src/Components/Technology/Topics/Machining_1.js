@@ -11,7 +11,10 @@ function Machining_1({ id }) {
     return <div style={{ padding: (isDesktop ? '1rem 0 2rem 0' : '0 15px 2rem 15px') }} className={`bg-white`} id={id}>
         <Container>
             <Row className='mt-3'>
-                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
+            <Col className='bg-danger' md='12' lg='7' sm='12'>
+            <img src="..." alt="..." width={'100%'} />
+                </Col>
+                <Col className="ml-auto mr-auto" md="12" lg="5" sm="12">
                     {t('tecnologia.usinagem-1.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, itens }, index) => <div key={index}>
                         {titulo && <h2 className='title' >{titulo}</h2>}
                         {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
@@ -22,6 +25,7 @@ function Machining_1({ id }) {
                         </> )}
                     </div>)}
                 </Col>
+                
             </Row>
         </Container>
     </div>;
