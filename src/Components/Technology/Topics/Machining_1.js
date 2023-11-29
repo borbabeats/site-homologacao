@@ -27,6 +27,7 @@ function Machining_1({ id }) {
                     </div>)}
                 </Col>
                 
+                
             </Row>
         </Container>
     </div>;

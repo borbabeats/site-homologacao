@@ -3,6 +3,7 @@ import img1971 from '../../../Config/Icons/LineHistory/trator.svg'
 import img1988 from '../../../Config/Icons/LineHistory/Prensa.svg'
 import img1995 from '../../../Config/Icons/LineHistory/caminhao.svg'
 import img2008 from '../../../Config/Icons/LineHistory/extrusão.png'
+import img2008 from '../../../Config/Icons/LineHistory/extrusão.png'
 import img2010 from '../../../Config/Icons/LineHistory/Usinagem.svg'
 import FotosAereaHome from '../../../Config/Images/Home/FotosAereaHome.webp'
 import imageFirst from '../../../Config/Images/Home/firstPhoto.webp'
@@ -47,6 +48,7 @@ function PageHome() {
             classNameIcon: '',
             textForTitle: '2008',
             textForApresentation: 'home.marco5',
+            img: img2008
             img: img2008
 
         }, {

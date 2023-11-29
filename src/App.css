@@ -6861,6 +6861,10 @@ button.bg-dark:hover {
   background-color: #fbfcf8 !important;
 }
 
+.bg-pearl {
+  background-color: #fbfcf8 !important;
+}
+
 .bg-transparent {
   background-color: transparent !important
 }
@@ -13622,6 +13626,7 @@ h3 small {
 .title {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
    font-weight: 400; 
+   font-weight: 400; 
 
 }
 
@@ -18438,7 +18443,13 @@ ul {
 @media screen and (min-width: 1450px) {
   .div-animate-smaller {
     left: 0% !important; /*era 25%*/
+    left: 0% !important; /*era 25%*/
   }  
+}
+
+.slick-track {
+  display: flex;
+  max-width: 750px;
 }
 
 .slick-track {
