@@ -207,7 +207,7 @@ export default function Lines() {
                         </Col>
                         <Col lg={6} sm={12} md={12} >
                             {/*Imagem do evento*/}
-                            <Image src={img} className='d-md-lg-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 0, position: 'absolute', top: '5%', right: '30% ', width: '60%' }} />
+                            <Image src={img} className='d-md-lg-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 0, position: 'absolute', top: '5%', right: '30% ', width: '450px' }} />
                         </Col>
                     </Row>
                 </Col>
