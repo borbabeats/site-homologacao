@@ -157,10 +157,10 @@
             },
             "politica": {
                 "menu": "Políticas Organizacionais",
-                "titulo": "",
+                "titulo": "Política do Sistema de Gestão da Qualidade e Ambiental",
                 "texto": [
                     {
-                        "titulo": "Política do Sistema de Gestão da Qualidade e Ambiental",
+                        "titulo": "",
                         "subtitulo": "A Maxiforja fornece soluções em componentes e sistemas para os segmentos automotivo, agrícola e industrial utilizando metodologia de gestão para:",
                         "texto": [
                             "Atender às expectativas dos clientes com criação, inovação e tecnologia;",
