@@ -321,6 +321,7 @@ progress {
 }
 
 
+
 .dropdowntoggle {
   background-color: #fff !important;
   border: #fff !important;
@@ -344,11 +345,23 @@ progress {
 
 .imgSustentability {
   width: 50%;
-  height: 100%;
   opacity: .9;
   border-radius: 0;
-  padding: 10px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.img-product {
+  position: relative;
+  display: flex;
+  left: 50%;
+  transform: translateX(-25%);
+}
+
+@media screen and (max-width: 1200px) {
+  .img-product {
+    left: 0%;
+    transform: translateX(0%);
+  }
 }
 
 
@@ -6832,6 +6845,10 @@ button.bg-dark:hover {
 
 .bg-white {
   background-color: #fff !important
+}
+
+.bg-pearl {
+  background-color: #fbfcf8 !important;
 }
 
 .bg-transparent {
@@ -13594,7 +13611,7 @@ h3 small {
 .media .media-heading,
 .title {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
-  /* font-weight: 400; */
+   font-weight: 400; 
 
 }
 
@@ -18410,8 +18427,13 @@ ul {
 
 @media screen and (min-width: 1450px) {
   .div-animate-smaller {
-    left: 25% !important;
+    left: 0% !important; /*era 25%*/
   }  
+}
+
+.slick-track {
+  display: flex;
+  max-width: 750px;
 }
 
 
