@@ -18,7 +18,7 @@ function Contact() {
 						<p className="m-2"> Av. Antonio Frederico Ozanan, 1.181</p>
 						<p className="m-2"> Bairro: Brigadeira - Canoas/RS - CEP 92420-360</p>
 					</Col>
-					<Col className=" " md={!isDesktop ? 12 : 6} lg={!isDesktop ? 12 : 6} sm={!isDesktop ? 12 : 6}>
+					<Col className="bg-pearl align-middle" md={!isDesktop ? 12 : 6} lg={!isDesktop ? 12 : 6} sm={!isDesktop ? 12 : 6}>
 						<h2 className="title mt-5">{t('contato.fale-conosco')}</h2>
 						<p> {t('contato.telefone')}: +55 (51) 2121-8900  </p>
 						<p> maxiforja@maxiforja.com.br </p>
