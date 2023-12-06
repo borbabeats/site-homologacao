@@ -1,223 +1,294 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import { useMediaQuery } from 'react-responsive';
-import { useEffect, useState, useRef } from 'react'
-import { useTranslation } from "react-i18next";
 import texture from '../../../../Config/Images/History/texture-dot.svg'
-import Slider from 'react-slick'
+import { Chrono } from "react-chrono";
+import { useMediaQuery } from 'react-responsive';
+
 
 
 const items = [
     {
-        id: "1963",
-        year: "1963",
-        img: require('../../../../Config/Images/Home/firstPhoto.webp'),
+        title: "1963",
+        cardSubtitle: "1963",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/Home/firstPhoto.webp')
+            },
+        },   
+        cardDetailedText: `Constituição da CIME - Companhia Industrial de Materiais Elétricos com a finalidade de produzir eletroferragem galvanizada para rede de energia elétrica.`
     },
     {
-        id: "1968",
-        year: "1968",
-        img: require('../../../../Config/Images/History/1968.webp'),
+        title: "1968",
+        cardSubtitle: "1968",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1968.webp')
+            },
+        },
+        cardDetailedText: `Início da gestão da Família Veit.`
     },
     {
-        id: "1973",
-        year: "1973",
-        img: require('../../../../Config/Images/History/1973.webp'), 
+        title: "1973",
+        cardSubtitle: "1973",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1973.webp')
+            },
+        },
+        cardDetailedText: `A empresa se transfere para o atual endereço, em terreno de 26000m² e área construída de 1600m². Inaugurada a Forjaria I, com Martelo Banning de 25kj.`
     },
     {
-        id: "1975",
-        year: "1975",
-        img: require('../../../../Config/Images/History/1975.webp'), 
+        title: "1975",
+        cardSubtitle: "1975",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1975.webp')
+            },
+        },
+        cardDetailedText: `Entra em operação Martelo Banning de 50 kj.`
     },
     {
-        id: "1988",
-        year: "1988",
-        img: require('../../../../Config/Images/History/1988.webp'), 
+        title: "1988",
+        cardSubtitle: "1988",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1988.webp')
+            },
+        },
+        cardDetailedText: `Inaugurada a Forjaria II com prensa Smeral de 4.000 t.`
     },
     {
-        id: "1991",
-        year: "1991",
-        img: require('../../../../Config/Images/History/1991.webp'), 
+        title: "1991",
+        cardSubtitle: "1991",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1991.webp')
+            },
+        },
+        cardDetailedText: `Iniciada a produção de peças usinadas de precisão com tornos, retíficas e geradora de engrenagens CNC.`
     },
     {
-        id: "1995",
-        year: "1995",
-        img: require('../../../../Config/Images/History/1995.webp'), 
+        title: "1995",
+        cardSubtitle: "1995",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1995.webp')
+            },
+        },
+        cardDetailedText: `Iniciada a produção de braços de direção para caminhões.`
     },
     {
-        id: "1998",
-        year: "1998",
-        img: require('../../../../Config/Images/History/1998.webp'),
+        title: "1998",
+        cardSubtitle: "1998",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/1998.webp')
+            }, 
+        },
+        cardDetailedText: `Implantada a unidade para produção de componentes do sistema de 3º Ponto de Tratores Agrícolas.`
     },
     {
-        id: "2001",
-        year: "2001",
-        img: require('../../../../Config/Images/History/2001.webp'),
+        title: "2001",
+        cardSubtitle: "2001",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2001.webp')
+            }, 
+        },
+        cardDetailedText: `Empresa passa a utilizar o software Solid Edge para CAD e o Unigraphics para aplicações CAD/CAM.`
     },
     {
-        id: "2003",
-        year: "2003",
-        img: require('../../../../Config/Images/History/2003_1.webp'),
+        title: "2003",
+        cardSubtitle: "2003",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2003_1.webp')
+            },
+        },
+        cardDetailedText: `Empresa lança novo produto no segmento agrícola: Gancho de engate rápido.`
     },
     {
-        id: "2003b",
-        year: "2003",
-        img: require('../../../../Config/Images/History/2003_2.webp'),
+        title: "2003",
+        cardSubtitle: "2003",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2003_2.webp')
+            },
+        },
+        cardDetailedText: `High Speed Machining: Empresa investe na aquisição de nova tecnologia para matrizaria.`
     },
     {
-        id: "2004",
-        year: "2004",
-        img: require('../../../../Config/Images/History/2004_1.webp'),
+        title: "2004",
+        cardTitle: "2004",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2004_1.webp')
+            },
+        },
+        cardDetailedText: `Implantado o Laboratório de Teste e Ensaios Mecânicos, com instalação de uma máquina de tração Kratos, capacidade 50 ton com software completo para definição das curvas força x deformação.`
     },
     {
-        id: "2004b",
-        year: "2004",
-        img: require('../../../../Config/Images/History/2004_2.webp'),  
+        title: "2004",
+        cardSubtitle: "2004",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2004_2.webp')
+            }, 
+        },
+        cardDetailedText: `Maxiforja inicia operações com seu primeiro robô para soldagem. Robô KR 15/2 KUKA de seis eixos, um mesa posicionadora de dois eixos, uma fonte sinérgica de 400A, além de acessórios como o sistema automático para o corte do arame e sistema de limpeza da tocha.`
     },
     {
-        id: "2008",
-        year: "2008",
-        img: require('../../../../Config/Images/History/2008_extrusao_quente.webp'),
+        title: "2008",
+        cardSubtitle: "2008",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2008_extrusao_quente.webp')
+            },
+        },
+        cardDetailedText: `Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro.`
     },
     {
-        id: "2009",
-        year: "2009",
-        img: require('../../../../Config/Images/History/2009_extrusao_hidraulica.webp'), 
+        title: "2009",
+        cardSubtitle: "2009",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2009_extrusao_hidraulica.webp')
+            },
+        },
+        cardDetailedText: `Também conhecidas como spindles, axle end ou extensões de carcaça, as pontas de eixo são fabricadas com tecnologia inédita na América Latina, a extrusão hidráulica a quente.`
     },
     {
-        id: "2009b",
-        year: "2009",
-        img: require('../../../../Config/Images/History/2009b_eixo_longo_para_tratores.webp'),
+        title: "2009",
+        cardSubtitle: "2009",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2009b_eixo_longo_para_tratores.webp')
+            }, 
+        },
+        cardDetailedText: `Tecnologia como diferencial. A Maxiforja passará a produzir, a partir do final deste ano, um novo eixo longo para tratores. Usados em veículos com rodados traseiros duplos, as peças serão destinadas à planta de Curitiba da CNH, empresa do grupo Fiat - um dos líderes do segmento de máquinas e equipamentos agrícolas, com mais de 11 mil distribuidores em 160 países.`
     },
     {
-        id: "2010",
-        year: "2010",
-        img: require('../../../../Config/Images/History/2010_lean_manufacturing.webp'), 
+        title: "2010",
+        cardSubtitle: "2010",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2010_lean_manufacturing.webp')
+            }, 
+        },
+        cardDetailedText: `Implantação do Lean Manufacturing, sistema criado pela empresa japonesa Toyota que ganhou espaço entre companhias do mundo inteiro.`
     },
     {
-        id: "2011",
-        year: "2011",
-        img: require('../../../../Config/Images/History/2011_predio_usinagem_novo.webp'),
+        title: "2011",
+        cardSubtitle: "2011",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2011_predio_usinagem_novo.webp')
+            },
+        },
+        cardDetailedText: `MAIS DO QUE UMA CONSTRUÇÃO. Novo prédio da Usinagem da Maxiforja foi projetado a partir de um conceito mais moderno e eficaz de produção.`
     },
     {
-        id: "2013",
-        year: "2013",
-        img: require('../../../../Config/Images/History/2013_usinagem_5_eixos.webp'),
+        title: "2013",
+        cardSubtitle: "2013",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2013_usinagem_5_eixos.webp')
+            }, 
+        },
+        cardDetailedText: `Ferramentaria estreia usinagem 5 em eixos (GROB). A Maxiforja agora conta com um novo recurso de usinagem que vai permitir mais agilidade na produção.`
     },
     {
-        id: "2014",
-        year: "2014",
-        img: require('../../../../Config/Images/History/2014_steering_knunckle.webp'),
+        title: "2014",
+        cardSubtitle: "2014",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2014_steering_knunckle.webp')
+            },
+        },
+        cardDetailedText: `Desenvolvimento e produção da sua primeira ponta de eixo dianteira (steering kunckle), uma peça de elevada complexidade e amplamente utilizada nos sistemas de direção de ônibus e caminhões.`
     },
     {
-        id: "2021",
-        year: "2021",
-        img: require('../../../../Config/Images/History/2021_impressora_3d.webp'),
+        title: "2021",
+        cardSubtitle: "2021",
+        media: {
+            type: "IMAGE",
+            source: {
+            url: require('../../../../Config/Images/History/2021_impressora_3d.webp')
+            }, 
+        },
+        cardDetailedText: `Aquisição instalação da primeira máquina de impressão 3D, o que permite a confecção interna de vários acessórios, como suportes, calibres, dispositivos. Além do ganho de agilidade de desenvolvimento para produtos próprios com a impressão prévia para análise e programas de medição.`
     },
-
 ]
 
+
 export default function Lines() {
-    const [activeYear, setActiveYear] = useState(items[0].id)
-    const intervalIdRef = useRef(null)
     const isMobile = useMediaQuery({ maxWidth: 767 }); // Tamanho SM
-    const { t } = useTranslation()
-   
-    useEffect(() => {
-        intervalIdRef.current = setInterval(() => {
-            const currentIndex = items.findIndex((item) => item.id === activeYear)
-            const nextIndex = (currentIndex + 1) % items.length
-            setActiveYear(items[nextIndex].id)
-        }, 10000)
 
-        return () => clearInterval(intervalIdRef.current)
-    })
-
-
-    const handleYearClick = (event) => {
-        setActiveYear(event)
+    return !isMobile ? ( <>
+        <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '360px' }}  />
+        <span className="year" style={{ position:'absolute', top:'50%', right: '0', width: '360px' }} ></span>
+        
+        
+      <Chrono
+        items={items}
+        slideItemDuration={6000}
+        slideShow
+        cardHeight={550}
+        reaMore={true}
+        cardWidth={650}
+        showAllCardsHorizontal
+        contentDetailHeight={100}
+        textOverlay
+        mode="VERTICAL_ALTERNATING"
+        theme={{
+            cardBgColor: "transparent",
+            cardForeColor: "violet",
+            titleColor: "white",
+            titleColorActive: "#f25500",
+          }} />
+          
+    </>
+        ) 
+        : <Chrono 
+            items={items}
+            slideItemDuration={4000}
+            slideShow
+            cardHeight={550}
+            readMore={true}
+            cardWidth={340}
+            showAllCardsHorizontal
+            contentDetailHeight={50}
+            textOverlay
+            mode="HORIZONTAL"
+            theme={{
+                cardBgColor: "transparent",
+                cardForeColor: "violet",
+                titleColor: "white",
+                titleColorActive: "#f25500",
+              }}
+        />
     }
 
-    const Navbar = ({ items }) => {
-        const settings = {
-            dots: false,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  infinite: true,
-                  dots: false,
-                },
-              },
-              {
-                breakpoint: 820,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  initialSlide: 1,
-                },
-              },
-            ],
-          };
 
-        return <nav style={{ zIndex: 90 }}>
-            <Slider {...settings} className="navbar d-lg-flex d-none d-none " style={{ zIndex: 91, backgroundColor: 'transparent', maxWidth: '750px', overflow: 'hidden' }}>
-                {items && items.map(({ id, year, index }) => {  
-                    return <li className={`${year} nav-item  ${activeYear === id && 'active'}`} onClick={() => handleYearClick(id)} key={`nav-bar-activeYear-${index}`}>
-                        <span className="year">{year}</span>
-                        <span className="bullet" />
-                    </li>
-                })}
-            </Slider>
-        </nav>
-    }
-
-   
-
-
-    return !isMobile
-        ? <Container fluid className="vh-100">
-            <Col>
-                <Navbar items={items} />
-            </Col>
-            {/*Textura de fundo*/}
-            <Image src={texture} style={{ position:'absolute', top:'50%', right: '0', width: '360px' }}  />
-            {items && items.map(({ id, year, img }) => id === activeYear && <Row className="h-100">
-                {/*Ano em tamanho menor*/}
-                <div className='div-animate-smaller ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '4%', left: '4%', fontSize: '12rem' }}>{year}</div>
-                {/*Ano em tamanho maior*/}
-                <div className='div-animate-bigger ' style={{ color: '#484848', borderRadius: 15, position: 'absolute', top: '20%', right: '25%', fontSize: '30rem' }}>{year}</div>
-                <Col lg={12} className="h-100">
-                    <Row className="h-100">
-                        <Col lg={6} sm={12} md={12} className="d-flex align-items-center">
-                            <div className="p-4 d-none d-lg-block  mr-auto ml-auto div-animate-text fade-in text-break text-white">
-                                <div style={{ borderRadius: 15, position: 'absolute', bottom: '35%', left: '20% ', width: '60%', }}>
-                                    {/* Texto do evento*/}
-                                    <p style={{ fontSize: '2rem' }}>{t('institucional.historico.texto.0.'+id)}</p>
-                                </div>
-                            </div>
-                            <div className="p-5 text-white d-lg-none d-sm-block  mr-auto ml-auto div-animate-text fade-in text-break">
-                                {/* Texto do evento versão tablet*/}
-                                <p style={{ fontSize: '2rem' }}>{t('institucional.historico.texto.0.'+id)}</p>
-                            </div>
-                        </Col>
-                        <Col lg={6} sm={12} md={12} >
-                            {/*Imagem do evento*/}
-                            <Image src={img} className='d-md-lg-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 0, position: 'absolute', top: '5%', right: '30% ', width: '450px' }} />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>)}
-        </Container>
-        : <Container fluid style={{ display: 'block', width: '100vw', padding: 0, margin: 0 }} >
-        </Container>
-
-
-
-}
+    
 
 

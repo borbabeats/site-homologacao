@@ -35,13 +35,13 @@ const ItemsNavLinkInstitucional = [
     }
 ]
 
-export default function Institucional() {
-    return <Container fluid className='bg-maxi' style={{ overflow: 'hidden' }} id='content' >
+function Institucional() {
+    return <Container fluid className='bg-maxi' style={{ overflow: 'hidden' }}  >
         <Row >
-            <Col xs={2} lg={2} sm={0} md={0} className="d-none d-lg-block bg-maxi" style={{ padding: 0, paddingTop: '10rem' }}>
+            <Col xs={2} lg={2} sm={0} md={0} className="d-none d-lg-block bg-maxi" style={{ paddingTop: '10rem' }}>
                 <NavSideBar ItemsNavLink={ItemsNavLinkInstitucional} />
             </Col>
-            <Col xs={15} lg={10} sm={15} style={{ height: 'auto', padding: 0 }}>
+            <Col xs={12} lg={10} sm={12} >
                 <GeneralPresentation id={'apresentacao-geral'} />
                 <OrganizationalPhilosoph id={'filosofia-organizacional'} />
                 <Historic id={'historico'} />
@@ -52,3 +52,5 @@ export default function Institucional() {
         </Row>
     </Container>
 }
+
+export default Institucional;

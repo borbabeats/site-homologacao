@@ -35,6 +35,7 @@
   box-sizing: border-box
 }
 
+
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -192,6 +193,19 @@ pre {
   margin-bottom: 1rem;
   margin-top: 0;
   overflow: auto
+}
+
+.alice-carousel__stage {
+  
+}
+
+.alice-carousel__stage-item {
+  width: 80px !important;
+}
+
+.alice-carousel__wrapper {
+  height: 50px;
+  max-width: 850px;
 }
 
 figure {
@@ -3401,6 +3415,14 @@ input[type=submit].btn-block {
 
 .dropdown-toggle:hover:after {
   background-color: #f25500 !important;
+}
+
+
+#timeline {
+  background-color: transparent;
+  width: 100%;
+  height: 1px;
+  margin-top: 0px;
 }
 
 
@@ -18431,6 +18453,46 @@ ul {
   to {
       transform: translateX(5%);
   }
+}
+
+/*altura da linha do tempo*/
+.gtUDBV.horizontal {
+  min-height: 80px !important;
+}
+
+
+.timeline-card-content {
+  background: transparent !important;
+  height: 50px !important;
+}
+
+
+.TimelineItemContentWrapper {
+  max-height: 80px;
+}
+
+/*altura dos anos da timeline*/
+.cXAOiP {
+  height: 90px !important;
+}
+
+/*background color dos anos da timeline*/
+.csXqQq.active, .cEwyyy.active {
+  background: transparent !important;
+}
+
+/*background do icon da timeline*/
+.bOPcbp:not(.using-icon).active {
+  background: #f25500 !important; 
+}
+
+/*cor do card da timeline*/
+
+
+
+/*cor do conteudo do card da timeline*/
+.fvphVK {
+  opacity: .8;
 }
 
 /* Aplicando a animação à div */
