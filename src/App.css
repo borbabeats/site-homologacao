@@ -18460,13 +18460,14 @@ ul {
   min-height: 80px !important;
 }
 
+/*background do ano da timeline*/
 .timeline-item-title.active.rc-title {
   background-color: transparent !important;
 }
 
-
-.DetailsTextWrapper-sc-1yk7mm5-6 {
-  background: transparent !important;
+/*cor do icon selecionado da timeline*/
+.timeline-vertical-circle > .active {
+  background-color: #f25500 !important;
 }
 
 
@@ -18481,17 +18482,17 @@ ul {
 
 
 
-/*background do icon da timeline*/
-.jSyxIo:not(.using-icon).active {
-  background: #f25500 !important; 
+/*background do card do evento da timeline*/
+.timeline-card-content div:nth-child(2) {
+  background-color: #ffffffb3;
+}
+
+/*background do texto do card do evento da timeline*/
+.timeline-card-content div:nth-child(3) {
+  background-color: transparent !important;
 }
 
 
-
-/*cor do conteudo do card da timeline*/
-.fvphVK {
-  opacity: .8;
-}
 
 /* Aplicando a animação à div */
 .div-animate-smaller {

@@ -129,7 +129,7 @@ const items = [
     },
     {
         title: "2004",
-        cardTitle: "2004",
+        cardSubtitle: "2004",
         media: {
             type: "IMAGE",
             source: {
@@ -260,11 +260,11 @@ export default function Lines() {
         textOverlay
         mode="VERTICAL_ALTERNATING"
         theme={{
-            cardBgColor: "transparent",
-            cardDetailsBackGround: '#ffffff',
-            titleColor: "white",
+            cardBgColor: "#ffffff",
+            titleColor: "#ffffff",
             titleColorActive: "#f25500",
-            iconBackgroundColor: "#f25500"
+            iconBackgroundColor: "#f25500",
+            cardDetailsBackGround: "#ffffff"
           }} />
           
     </>
