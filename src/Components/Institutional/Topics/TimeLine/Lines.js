@@ -261,9 +261,10 @@ export default function Lines() {
         mode="VERTICAL_ALTERNATING"
         theme={{
             cardBgColor: "transparent",
-            cardForeColor: "violet",
+            cardDetailsBackGround: '#ffffff',
             titleColor: "white",
             titleColorActive: "#f25500",
+            iconBackgroundColor: "#f25500"
           }} />
           
     </>

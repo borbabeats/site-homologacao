@@ -18460,10 +18460,13 @@ ul {
   min-height: 80px !important;
 }
 
+.timeline-item-title.active.rc-title {
+  background-color: transparent !important;
+}
 
-.timeline-card-content {
+
+.DetailsTextWrapper-sc-1yk7mm5-6 {
   background: transparent !important;
-  height: 50px !important;
 }
 
 
@@ -18476,17 +18479,12 @@ ul {
   height: 90px !important;
 }
 
-/*background color dos anos da timeline*/
-.csXqQq.active, .cEwyyy.active {
-  background: transparent !important;
-}
+
 
 /*background do icon da timeline*/
-.bOPcbp:not(.using-icon).active {
+.jSyxIo:not(.using-icon).active {
   background: #f25500 !important; 
 }
-
-/*cor do card da timeline*/
 
 
 
