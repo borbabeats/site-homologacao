@@ -9,6 +9,9 @@ import StayIn from "../src/Components/StayIn/StayIn";
 import Acting from "../src/Components/Acting/Products";
 import Page404 from "../src/Components/Page404"
 import Footer from "../src/Components/Footer/Footer";
+import Login from '../src/Components/Login/Formik'
+import Cadastros from "./Components/Login/Cadastros";
+import Criarcadastro from "./Components/Login/CriarCadastro";
 import "../src/Config/i18n";
 import "./index.css";
 import './App.css';
@@ -30,6 +33,9 @@ function App() {
           <Route path="/fique-por-dentro" element={<StayIn />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="*" element={<Page404 />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/cadastros" element={<Cadastros />} />
+          <Route path="/criarcadastro" element={<Criarcadastro />} />
         </Routes>
         <Footer />
       </BrowserRouter>

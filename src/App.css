@@ -195,9 +195,6 @@ pre {
   overflow: auto
 }
 
-.alice-carousel__stage {
-  
-}
 
 .alice-carousel__stage-item {
   width: 80px !important;
@@ -15567,7 +15564,7 @@ select::-moz-focus-inner {
 
 
 .card-register {
-  background-color: #ff8f5e;
+  background-color: #ddd;
   border-radius: 8px;
   color: #fff;
   margin: 20px 0 70px;
